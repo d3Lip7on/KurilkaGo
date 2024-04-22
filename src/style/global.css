@@ -77,3 +77,8 @@ textarea {
 :target {
 	scroll-margin-block: 5ex;
 }
+
+.container{
+	max-width: 1420px;
+	margin: 0 auto;
+}
