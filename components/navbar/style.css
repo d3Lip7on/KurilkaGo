@@ -1,0 +1,19 @@
+.navbar{
+    background: rgb(25, 25, 34);
+    height: 100px;
+    display: flex;
+}
+
+
+.navbar__logo{
+    max-width: 51px;
+    max-height: 58px;
+}
+
+.navbar__magnifying-glass{
+    background: url(images/magnifying_glass.svg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    border: 1px solid #000;
+    box-shadow: none;
+}
