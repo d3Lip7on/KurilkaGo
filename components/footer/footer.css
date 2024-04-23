@@ -1,0 +1,46 @@
+.footer {
+	background: rgb(25, 25, 34);
+	width: 1920px;
+	height: 465px;
+}
+
+.container__address {
+	width: 435px;
+	height: 263px;
+	padding-right: 1235px;
+	padding-left: 250px;
+	padding-top: 95px;
+	padding-bottom: 105px;
+}
+
+.address {
+	width: 170px;
+	height: 31px;
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 39px;
+	text-align: left;
+}
+
+.address_text {
+	width: 303px;
+	height: 110px;
+	font-size: 32px;
+	font-weight: 400;
+	line-height: 39px;
+	text-align: left;
+}
+
+.copyright {
+	width: 435px;
+	height: 31px;
+	font-size: 32px;
+	font-weight: 500;
+	line-height: 39px;
+	text-align: left;
+}
+
+.logo__icon {
+	width: 51px;
+	height: 58px;
+}
