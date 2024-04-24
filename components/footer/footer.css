@@ -8,14 +8,14 @@
 	padding: 100px 0;
 }
 
-.address {
+.footer__address-hedding {
 	font-size: 32px;
 	font-weight: 700;
 	color: white;
 	padding-bottom: 15px;
 }
 
-.address__text {
+.footer__address-text {
 	font-size: 32px;
 	font-weight: 400;
 	max-width: 303px;
@@ -23,7 +23,7 @@
 	padding-bottom: 76px;
 }
 
-.copyright {
+.footer__address-copyright {
 	font-size: 32px;
 	font-weight: 500;
 	max-width: 435px;
@@ -45,14 +45,14 @@
 	padding-bottom: 35px;
 }
 
-.mail-paragraf,
+.contacts__mail-paragraf,
 .number-paragraf {
 	font-size: 36px;
 	font-weight: 700;
 	color: white;
 }
 
-.contacts__text {
+.contacts__number-paragraf {
 	font-size: 18px;
 	font-weight: 500;
 	color: white;
