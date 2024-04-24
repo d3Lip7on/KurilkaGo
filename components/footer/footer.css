@@ -1,46 +1,103 @@
 .footer {
 	background: rgb(25, 25, 34);
-	width: 1920px;
-	height: 465px;
+	max-width: 1920px;
+	max-height: 465px;
+	display: flex;
+	align-items: center;
 }
 
-.container__address {
-	width: 435px;
-	height: 263px;
-	padding-right: 1235px;
-	padding-left: 250px;
-	padding-top: 95px;
-	padding-bottom: 105px;
+.footer__inline {
+	margin-right: 250px;
+	margin-left: 250px;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	align-items: center;
+}
+.block__address {
+	max-width: 303px;
+	text-align: left;
+	margin: 20px 0;
+	order: 1;
 }
 
 .address {
-	width: 170px;
-	height: 31px;
 	font-size: 32px;
 	font-weight: 700;
-	line-height: 39px;
-	text-align: left;
 }
 
-.address_text {
-	width: 303px;
-	height: 110px;
+.address__text {
 	font-size: 32px;
 	font-weight: 400;
-	line-height: 39px;
-	text-align: left;
+	margin-bottom: 20px;
+	word-break: break-word;
 }
 
 .copyright {
-	width: 435px;
-	height: 31px;
 	font-size: 32px;
 	font-weight: 500;
-	line-height: 39px;
-	text-align: left;
 }
 
 .logo__icon {
-	width: 51px;
-	height: 58px;
+	max-width: 51px;
+	max-height: 58px;
+	margin-top: 316px;
+	order: 2;
+}
+
+.block__contacts {
+	max-width: 417px;
+	order: 3;
+	text-align: left;
+	margin: 20px 0;
+	align-items: center;
+}
+
+.contacts__mail,
+.contacts__number {
+	font-size: 36px;
+	font-weight: 700;
+}
+
+.contacts__mail-icon {
+	max-width: 35px;
+	max-height: 35px;
+}
+.contacts__number-icon {
+	max-width: 35px;
+	max-height: 35px;
+}
+
+.contacts__text {
+	max-width: 350px;
+	font-size: 18px;
+	font-weight: 500;
+	margin-top: 18px;
+}
+
+.instagram {
+	max-width: 35px;
+	max-height: 35px;
+	display: inline-block;
+}
+
+.telegram {
+	max-width: 37px;
+	max-height: 34px;
+	display: inline-block;
+	margin-left: 8px;
+}
+
+.watsap {
+	max-width: 35px;
+	max-height: 35px;
+	display: inline-block;
+	margin-left: 8px;
+}
+
+.xenia {
+	max-width: 34px;
+	max-height: 33px;
+	display: inline-block;
+	margin-left: 8px;
 }
