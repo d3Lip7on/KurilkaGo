@@ -10,21 +10,17 @@
 	padding-top: 90px;
 }
 
-.footer__address {
-	max-width: 303px;
-	margin: 20px 0;
-}
-
 .address {
 	font-size: 32px;
 	font-weight: 700;
 	color: white;
+	margin-bottom: 15px;
 }
 
 .address__text {
 	font-size: 32px;
 	font-weight: 400;
-	margin-top: 15px;
+	max-width: 303px;
 	color: white;
 	padding-bottom: 76px;
 }
@@ -40,10 +36,6 @@
 	margin-top: 316px;
 }
 
-.footer__contacts {
-	max-width: 417px;
-	margin: 20px 0;
-}
 .contacts__mail {
 	display: flex;
 	padding-bottom: 30px;
@@ -73,6 +65,7 @@
 	font-weight: 500;
 	color: white;
 	padding-bottom: 57px;
+	max-width: 417px;
 }
 
 .contacts__socials {
