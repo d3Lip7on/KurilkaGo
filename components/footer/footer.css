@@ -19,12 +19,14 @@
 .address {
 	font-size: 32px;
 	font-weight: 700;
+	color: white;
 }
 
 .address__text {
 	font-size: 32px;
 	font-weight: 400;
 	margin-top: 15px;
+	color: white;
 }
 
 .copyright {
@@ -32,6 +34,7 @@
 	font-weight: 500;
 	padding-top: 76px;
 	max-width: 435px;
+	color: white;
 }
 
 .logo__icon {
@@ -60,6 +63,7 @@
 .number-paragraf {
 	font-size: 36px;
 	font-weight: 700;
+	color: white;
 }
 
 .mail-icon {
@@ -78,6 +82,7 @@
 	font-size: 18px;
 	font-weight: 500;
 	margin-top: 35px;
+	color: white;
 }
 
 .contacts__socials {
