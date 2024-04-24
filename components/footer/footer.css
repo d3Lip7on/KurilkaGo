@@ -1,6 +1,5 @@
 .footer {
 	background: rgb(25, 25, 34);
-<<<<<<< HEAD
 }
 
 .footer__inner {
@@ -13,25 +12,6 @@
 
 .footer__address {
 	max-width: 303px;
-=======
-	max-width: 1920px;
-	max-height: 465px;
-	display: flex;
-	align-items: center;
-}
-
-.footer__inline {
-	margin-right: 250px;
-	margin-left: 250px;
-	display: flex;
-	justify-content: space-between;
-	width: 100%;
-	align-items: center;
-}
-.block__address {
-	max-width: 303px;
-	text-align: left;
->>>>>>> 1cded1c583da8b7190526ff8adca21d4442c0a38
 	margin: 20px 0;
 	order: 1;
 }
@@ -44,22 +24,14 @@
 .address__text {
 	font-size: 32px;
 	font-weight: 400;
-<<<<<<< HEAD
 	margin-top: 15px;
-=======
-	margin-bottom: 20px;
-	word-break: break-word;
->>>>>>> 1cded1c583da8b7190526ff8adca21d4442c0a38
 }
 
 .copyright {
 	font-size: 32px;
 	font-weight: 500;
-<<<<<<< HEAD
 	padding-top: 76px;
 	max-width: 435px;
-=======
->>>>>>> 1cded1c583da8b7190526ff8adca21d4442c0a38
 }
 
 .logo__icon {
@@ -69,18 +41,13 @@
 	order: 2;
 }
 
-<<<<<<< HEAD
 .footer__contacts {
-=======
-.block__contacts {
->>>>>>> 1cded1c583da8b7190526ff8adca21d4442c0a38
 	max-width: 417px;
 	order: 3;
 	text-align: left;
 	margin: 20px 0;
 	align-items: center;
 }
-<<<<<<< HEAD
 .contacts__mail {
 	display: flex;
 }
@@ -91,16 +58,10 @@
 
 .mail-paragraf,
 .number-paragraf {
-=======
-
-.contacts__mail,
-.contacts__number {
->>>>>>> 1cded1c583da8b7190526ff8adca21d4442c0a38
 	font-size: 36px;
 	font-weight: 700;
 }
 
-<<<<<<< HEAD
 .mail-icon {
 	max-width: 35px;
 	max-height: 35px;
@@ -127,56 +88,19 @@
 .instagram {
 	max-width: 35px;
 	max-height: 35px;
-=======
-.contacts__mail-icon {
-	max-width: 35px;
-	max-height: 35px;
-}
-.contacts__number-icon {
-	max-width: 35px;
-	max-height: 35px;
-}
-
-.contacts__text {
-	max-width: 350px;
-	font-size: 18px;
-	font-weight: 500;
-	margin-top: 18px;
-}
-
-.instagram {
-	max-width: 35px;
-	max-height: 35px;
-	display: inline-block;
->>>>>>> 1cded1c583da8b7190526ff8adca21d4442c0a38
 }
 
 .telegram {
 	max-width: 37px;
 	max-height: 34px;
-<<<<<<< HEAD
-=======
-	display: inline-block;
-	margin-left: 8px;
->>>>>>> 1cded1c583da8b7190526ff8adca21d4442c0a38
 }
 
 .watsap {
 	max-width: 35px;
 	max-height: 35px;
-<<<<<<< HEAD
-=======
-	display: inline-block;
-	margin-left: 8px;
->>>>>>> 1cded1c583da8b7190526ff8adca21d4442c0a38
 }
 
 .xenia {
 	max-width: 34px;
 	max-height: 33px;
-<<<<<<< HEAD
-=======
-	display: inline-block;
-	margin-left: 8px;
->>>>>>> 1cded1c583da8b7190526ff8adca21d4442c0a38
 }
