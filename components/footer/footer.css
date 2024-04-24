@@ -2,15 +2,15 @@
 	background: rgb(25, 25, 34);
 }
 
-.footer__inline {
+.footer__inner {
 	display: flex;
-	justify-content: space-between;
-	width: 100%;
 	align-items: center;
+	gap: 250px;
+	padding-bottom: 90px;
+	padding-top: 90px;
 }
-.block__address {
+.footer__address {
 	max-width: 303px;
-	text-align: left;
 	margin: 20px 0;
 	order: 1;
 }
@@ -23,13 +23,14 @@
 .address__text {
 	font-size: 32px;
 	font-weight: 400;
-	margin-bottom: 20px;
-	word-break: break-word;
+	margin-top: 15px;
 }
 
 .copyright {
 	font-size: 32px;
 	font-weight: 500;
+	padding-top: 76px;
+	max-width: 435px;
 }
 
 .logo__icon {
@@ -39,59 +40,66 @@
 	order: 2;
 }
 
-.block__contacts {
+.footer__contacts {
 	max-width: 417px;
 	order: 3;
 	text-align: left;
 	margin: 20px 0;
 	align-items: center;
 }
-
-.contacts__mail,
+.contacts__mail {
+	display: flex;
+}
 .contacts__number {
+	display: flex;
+	margin-top: 30px;
+}
+
+.mail-paragraf,
+.number-paragraf {
 	font-size: 36px;
 	font-weight: 700;
 }
 
-.contacts__mail-icon {
+.mail-icon {
 	max-width: 35px;
 	max-height: 35px;
+	margin-right: 9px;
 }
-.contacts__number-icon {
+
+.number-icon {
 	max-width: 35px;
 	max-height: 35px;
+	margin-right: 14px;
 }
 
 .contacts__text {
-	max-width: 350px;
 	font-size: 18px;
 	font-weight: 500;
-	margin-top: 18px;
+	margin-top: 35px;
 }
 
+.contacts__socials {
+	display: flex;
+	padding-top: 57px;
+	gap: 30px;
+}
 .instagram {
 	max-width: 35px;
 	max-height: 35px;
-	display: inline-block;
 }
 
 .telegram {
 	max-width: 37px;
 	max-height: 34px;
-	display: inline-block;
-	margin-left: 8px;
 }
 
 .watsap {
 	max-width: 35px;
 	max-height: 35px;
-	display: inline-block;
-	margin-left: 8px;
 }
 
 .xenia {
 	max-width: 34px;
 	max-height: 33px;
-	display: inline-block;
-	margin-left: 8px;
 }
