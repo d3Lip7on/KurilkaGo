@@ -1,14 +1,8 @@
 .footer {
 	background: rgb(25, 25, 34);
-	max-width: 1920px;
-	max-height: 465px;
-	display: flex;
-	align-items: center;
 }
 
 .footer__inline {
-	margin-right: 250px;
-	margin-left: 250px;
 	display: flex;
 	justify-content: space-between;
 	width: 100%;
