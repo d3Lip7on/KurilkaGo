@@ -65,9 +65,9 @@
 	gap: 30px;
 }
 
-/* .xenia,
-.watsap,
-.telegram,
-.instagram {
-	
-} */
+.instagram:hover,
+.telegram:hover,
+.watsap:hover,
+.twitter:hover {
+	transform: scale(1.2);
+}
