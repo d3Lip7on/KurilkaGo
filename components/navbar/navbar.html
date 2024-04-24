@@ -6,10 +6,23 @@
  </head>
  <body>
     <section class="navbar">
-        <img src="images/logo_white.svg" alt="" class="navbar__logo">
-            <form action="#">
-                <input type="submit" class="navbar__magnifying-glass" placeholder="">
-            </form>
+        <div class="navbar__main">
+            <img src="images/logo_white.svg" alt="" class="navbar__logo">
+            <div class="navbar__right">
+                <form action="#">
+                    <div class="navbar__search">
+                        <button type="submit" class="navbar__search-submit"><img src="images/magnifying_glass.svg" alt=""></button>
+                        <input type="text" class="navbar__search-label" placeholder="Search for ...">
+                    </div>
+                </form>
+                <img src="images/cart.svg" class="navbar__cart" alt="">
+                <img src="images/human.svg" class="navbar__account" alt="">
+                <img src="images/magnifying_glass.svg" class="navbar__search-icon">
+            </div>
+        </div>
+        <div class="navbar__search-adaptive">
+
+        </div>
     </section>
  </body>
 </html>
