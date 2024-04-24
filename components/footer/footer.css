@@ -4,17 +4,15 @@
 
 .footer__inner {
 	display: flex;
-	align-items: center;
 	justify-content: space-between;
-	padding-bottom: 90px;
-	padding-top: 90px;
+	padding: 100px 0;
 }
 
 .address {
 	font-size: 32px;
 	font-weight: 700;
 	color: white;
-	margin-bottom: 15px;
+	padding-bottom: 15px;
 }
 
 .address__text {
@@ -33,16 +31,18 @@
 }
 
 .logo__icon {
-	margin-top: 316px;
+	padding-top: 316px;
 }
 
 .contacts__mail {
 	display: flex;
+	gap: 10px;
 	padding-bottom: 30px;
 }
 .contacts__number {
 	display: flex;
-	margin-bottom: 35px;
+	gap: 14px;
+	padding-bottom: 35px;
 }
 
 .mail-paragraf,
@@ -50,14 +50,6 @@
 	font-size: 36px;
 	font-weight: 700;
 	color: white;
-}
-
-.mail-icon {
-	margin-right: 9px;
-}
-
-.number-icon {
-	margin-right: 14px;
 }
 
 .contacts__text {
