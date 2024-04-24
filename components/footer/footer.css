@@ -36,7 +36,7 @@
 
 .contacts__mail {
 	display: flex;
-	gap: 10px;
+	gap: 9px;
 	padding-bottom: 30px;
 }
 .contacts__number {
@@ -45,14 +45,14 @@
 	padding-bottom: 35px;
 }
 
-.contacts__mail-paragraf,
+.mail-paragraf,
 .number-paragraf {
 	font-size: 36px;
 	font-weight: 700;
 	color: white;
 }
 
-.contacts__number-paragraf {
+.contacts__text {
 	font-size: 18px;
 	font-weight: 500;
 	color: white;
