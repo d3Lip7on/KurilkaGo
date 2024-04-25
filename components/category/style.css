@@ -12,6 +12,9 @@
     gap: 35px;
     flex-wrap: wrap;
     justify-content: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .category__text{
@@ -22,12 +25,14 @@
     line-height: 39px;
     letter-spacing: 0%;
     text-align: left;
+    justify-content: center;
 }
 
 .category__text-blur{
-    background: transparent;
     width: 450px;
-
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(1px)
 }
 
 .category__block1{
@@ -51,4 +56,18 @@
 
 .category__section{
     margin-bottom: 100px;
+}
+
+@media screen and (max-width: 620px){
+    .category__block{
+        width: 350px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 380px){
+    .category__block{
+        width: 250px;
+        height: 200px;
+    }
 }
