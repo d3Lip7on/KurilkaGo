@@ -1,3 +1,48 @@
 .category__block{
-    
+    border-radius: 25px;
+    width: 450px;
+    height: 400px;
+    display: flex;
+    align-items: end;
+    padding-bottom: 11px;
+}
+
+.category__blocks{
+    display: flex;
+    gap: 35px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.category__text{
+    margin: 0 auto;
+    color: rgb(255, 255, 255);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.category__block1{
+    background: url(img/Cigaretes.png);
+}
+.category__block2{
+    background: url(img/Cigar.png);
+}
+.category__block3{
+    background: url(img/Hookah.png);
+}
+.category__block4{
+    background: url(img/Pod\ system.png);
+}
+.category__block5{
+    background: url(img/E-cig.png);
+}
+.category__block6{
+    background: url(img/IQOS.png);
+}
+
+.category__section{
+    margin-bottom: 100px;
 }
