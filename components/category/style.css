@@ -24,6 +24,12 @@
     text-align: left;
 }
 
+.category__text-blur{
+    background: transparent;
+    width: 450px;
+
+}
+
 .category__block1{
     background: url(img/Cigaretes.png);
 }
