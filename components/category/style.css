@@ -26,13 +26,14 @@
     letter-spacing: 0%;
     text-align: left;
     justify-content: center;
+    filter: none;
 }
 
 .category__text-blur{
     width: 450px;
     display: flex;
     justify-content: center;
-    backdrop-filter: blur(1px)
+    filter: blur(5px);
 }
 
 .category__block1{
