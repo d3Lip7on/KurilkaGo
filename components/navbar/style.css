@@ -84,6 +84,7 @@
     padding-left: 29px;
     gap: 12px;
     display: none;
+    position: absolute;
 }
 
 .navbar__label-adaptive{
@@ -177,4 +178,28 @@
     line-height: 44px;
     letter-spacing: 0%;
     text-align: left;
+}
+
+@media screen and (max-width: 600px){
+    .header{
+        padding-left: 0;
+        
+    }
+}
+
+@media screen and (max-width: 400px){
+    .header__heading{
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .header__description{
+        font-size: 15px;
+        line-height: 25px;
+    }
+    .header__button{
+        width: 200px;
+        height: 75px;
+        font-size: 25px;
+        line-height: 25px;
+    }
 }
