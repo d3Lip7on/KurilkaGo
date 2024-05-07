@@ -4,6 +4,7 @@
 
 .footer__inner {
 	display: flex;
+
 	justify-content: space-between;
 	padding: 100px 0;
 }
@@ -29,9 +30,14 @@
 	max-width: 435px;
 	color: white;
 }
+.footer__contacts {
+	display: flex;
+	flex-direction: column;
+}
 
 .logo__icon {
-	padding-top: 216px;
+	align-self: self-end;
+	width: 51px;
 }
 
 .contacts__mail {
@@ -70,4 +76,29 @@
 .watsap:hover,
 .twitter:hover {
 	transform: scale(1.2);
+}
+
+@media screen and (max-width: 1104px) {
+	.footer__inner {
+		flex-direction: column;
+		gap: 30px;
+		align-items: center;
+	}
+	.logo__icon {
+		align-self: center;
+		order: 3;
+	}
+	.footer__address {
+		order: 2;
+	}
+	.footer__address-text {
+		padding-bottom: 30px;
+		max-width: none;
+	}
+	.contacts__text {
+		max-width: none;
+	}
+	.contacts__socials {
+		align-self: center;
+	}
 }
