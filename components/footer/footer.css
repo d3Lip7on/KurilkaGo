@@ -1,0 +1,73 @@
+.footer {
+	background: rgb(25, 25, 34);
+}
+
+.footer__inner {
+	display: flex;
+	justify-content: space-between;
+	padding: 100px 0;
+}
+
+.footer__address-hedding {
+	font-size: 32px;
+	font-weight: 700;
+	color: white;
+	padding-bottom: 15px;
+}
+
+.footer__address-text {
+	font-size: 32px;
+	font-weight: 400;
+	max-width: 303px;
+	color: white;
+	padding-bottom: 76px;
+}
+
+.footer__address-copyright {
+	font-size: 32px;
+	font-weight: 500;
+	max-width: 435px;
+	color: white;
+}
+
+.logo__icon {
+	padding-top: 216px;
+}
+
+.contacts__mail {
+	display: flex;
+	gap: 9px;
+	padding-bottom: 30px;
+}
+.contacts__number {
+	display: flex;
+	gap: 14px;
+	padding-bottom: 35px;
+}
+
+.mail-paragraf,
+.number-paragraf {
+	font-size: 36px;
+	font-weight: 700;
+	color: white;
+}
+
+.contacts__text {
+	font-size: 18px;
+	font-weight: 500;
+	color: white;
+	padding-bottom: 57px;
+	max-width: 417px;
+}
+
+.contacts__socials {
+	display: flex;
+	gap: 30px;
+}
+
+.instagram:hover,
+.telegram:hover,
+.watsap:hover,
+.twitter:hover {
+	transform: scale(1.2);
+}
