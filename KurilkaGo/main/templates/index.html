@@ -1,0 +1,10 @@
+{% extends 'layout.html' %}
+
+{% block title %}TITLE{% endblock %}
+
+{% block content %}
+<h1>Hello2 </h1>
+{%for el in values%}
+    <p>this is <span>{{el}}</span></p>
+{%endfor%}
+{% endblock %}
