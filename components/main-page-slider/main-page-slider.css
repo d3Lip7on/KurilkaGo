@@ -1,6 +1,5 @@
 .slide {
 	display: flex;
-	background-image: url(images/slider-image-1.png);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -10,12 +9,23 @@
 	overflow: hidden;
 }
 
+.slide__first {
+	background-image: url(images/slider-image-1.png);
+}
+
+.slide__second {
+	background-image: url(images/slider-image-2.png);
+}
+
 .slide__content {
 	background-color: rgba(0, 0, 0, 0.6);
 	max-width: 600px;
 	padding: 100px 30px;
 	text-align: right;
 	font-style: italic;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 .slide__heading {
 	font-weight: 700;
@@ -48,3 +58,11 @@
 		font-size: 1.3rem;
 	}
 }
+
+@media screen and (max-width: 500px) {
+	.slide {
+		min-height: 500px;
+	}
+}
+
+/* Свойства, переопределяющие стили splide.js  */
