@@ -198,7 +198,6 @@
 	width: 450px;
 	height: 400px;
 	display: flex;
-	align-items: end;
 	padding-bottom: 11px;
 }
 .category__block:hover {
@@ -220,18 +219,14 @@
 }
 
 .category__text {
-	margin: 0 auto;
 	color: rgb(255, 255, 255);
 	font-size: 32px;
 	font-weight: 700;
 	line-height: 39px;
 	letter-spacing: 0%;
-	text-align: left;
-	justify-content: center;
-	filter: none;
+	align-self: self-end;
 	text-shadow: 0px 0px 20px rgb(20, 38, 40);
 }
-
 .category__text-blur {
 	position: relative;
 	width: 450px;
