@@ -29,9 +29,17 @@
 	max-width: 435px;
 	color: white;
 }
+.footer__contacts {
+	display: flex;
+	flex-direction: column;
+}
+.footer__logo-icon-href {
+	display: flex;
+}
 
 .logo__icon {
-	padding-top: 216px;
+	align-self: self-end;
+	width: 51px;
 }
 
 .contacts__mail {
@@ -69,5 +77,42 @@
 .telegram:hover,
 .watsap:hover,
 .twitter:hover {
+	transition: 0.2s;
 	transform: scale(1.2);
+}
+.instagram:not(hover),
+.telegram:not(hover),
+.watsap:not(hover),
+.twitter:not(hover) {
+	transition: 0.2s;
+}
+
+@media screen and (max-width: 1104px) {
+	.footer__inner {
+		flex-direction: column;
+		gap: 30px;
+		align-items: center;
+		padding: 60px 0px;
+	}
+	.logo__icon {
+		align-self: center;
+	}
+	.footer__address {
+		order: 2;
+	}
+	.footer__address-text {
+		font-size: 30px;
+		padding-bottom: 30px;
+		max-width: none;
+	}
+	.contacts__text {
+		font-size: 28px;
+		max-width: 560px;
+	}
+	.contacts__socials {
+		align-self: center;
+	}
+	.footer__logo-icon-href {
+		order: 3;
+	}
 }
