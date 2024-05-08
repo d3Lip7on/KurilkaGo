@@ -90,15 +90,15 @@ textarea {
 	margin: 0 auto;
 }
 /* стили для навбара */
-.navbar {
-	background: rgb(25, 25, 34);
-}
 .navbar__main {
 	height: 100px;
 	display: flex;
 	padding: 0 100px;
 }
 
+.navbar {
+	background: rgb(25, 25, 34);
+}
 .navbar__logo {
 	max-width: 51px;
 	max-height: 58px;
@@ -339,5 +339,71 @@ textarea {
 	}
 	.footer__logo-icon-href {
 		order: 3;
+	}
+}
+@media screen and (max-width: 601px) {
+	.mail-paragraf {
+		font-size: 30px;
+	}
+	.number-paragraf {
+		font-size: 30px;
+	}
+	.contacts__text {
+		font-size: 20px;
+		max-width: 500px;
+	}
+	.footer__address-hedding {
+		font-size: 30px;
+	}
+	.footer__address-text {
+		max-width: 500px;
+		font-size: 27px;
+	}
+	.footer__address-copyright {
+		font-size: 30px;
+	}
+}
+@media screen and (max-width: 460px) {
+	.mail-paragraf {
+		font-size: 26px;
+	}
+	.number-paragraf {
+		font-size: 26px;
+	}
+	.contacts__text {
+		font-size: 18px;
+		max-width: 500px;
+	}
+	.footer__address-hedding {
+		font-size: 26px;
+	}
+	.footer__address-text {
+		max-width: 500px;
+		font-size: 22px;
+	}
+	.footer__address-copyright {
+		font-size: 26px;
+	}
+}
+@media screen and (max-width: 370px) {
+	.mail-paragraf {
+		font-size: 20px;
+	}
+	.number-paragraf {
+		font-size: 20px;
+	}
+	.contacts__text {
+		font-size: 18px;
+		max-width: 500px;
+	}
+	.footer__address-hedding {
+		font-size: 20px;
+	}
+	.footer__address-text {
+		max-width: 500px;
+		font-size: 22px;
+	}
+	.footer__address-copyright {
+		font-size: 20px;
 	}
 }
