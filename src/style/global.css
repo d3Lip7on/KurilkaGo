@@ -90,8 +90,10 @@ textarea {
 	margin: 0 auto;
 }
 /* стили для навбара */
-.navbar__main {
+.navbar {
 	background: rgb(25, 25, 34);
+}
+.navbar__main {
 	height: 100px;
 	display: flex;
 	padding: 0 100px;
