@@ -6,7 +6,7 @@
 .pagination {
   display: flex;
   align-items: center;
-  padding: 10px 40px;
+  padding: 10px 0px;
   border-radius: 15px;
 }
 .pag-button1,
@@ -22,20 +22,40 @@
 .pag-button1 {
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
+  cursor: pointer;
 }
 .pag-button2 {
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
+  cursor: pointer;
 }
 
-ul {
-  padding: 0px;
-  margin: 0px;
+.pag-button1:hover{
+  background-color: #3e757b;
+  transition: all 0.5s ease 0s;
+}
+.pag-button1:not(hover){
+  
+  transition: all 0.5s ease 0s;
+}
+.pag-button2:hover{
+  background-color: #3e757b;
+  transition: all 0.5s ease 0s;
+}
+.pag-button2:not(hover){
+  
+  transition: all 0.5s ease 0s;
+}
+.pagination ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
   flex-wrap: nowrap;
+  list-style: none;
 }
-ul li {
-  display: inline-block;
 
+.pagination ul li {
+  display: inline-block;
   background: #569ea6;
   width: 54px;
   height: 54px;
@@ -43,9 +63,46 @@ ul li {
   font-size: 28px;
   line-height: 55px;
   cursor: pointer;
-  transition: all 0.5s ease 0s;
+  transition: all 0.5s ease;
   text-align: center;
+   
 }
+
+
+@media (max-width: 768px) 
+{
+  .pagination ul li {
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    line-height: 45px;
+  }
+  .pag-button1,
+  .pag-button2 {
+  width: 40px;
+    height: 40px;
+    line-height: 45px;
+}
+}
+@media (max-width: 420px) 
+{
+  .pagination ul li {
+    font-size: 15px; 
+    width: 30px;
+    height: 30px;
+    line-height: 33px;
+  }
+  .pag-button1,
+  .pag-button2 {
+  width: 30px;
+    height: 30px;
+    line-height: 33px;
+}
+}
+ul li:not(hover) {
+  transition: all 0.5s ease 0s;
+}
+
 .arrow-prev {
   border: solid #fff;
   border-width: 0 3px 3px 0;

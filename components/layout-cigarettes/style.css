@@ -1,27 +1,55 @@
 .layout-cigarettes {
   max-width: 343px;
-  min-height: 500px;
+  max-height: 500px;
   background-color: #444355;
   border-radius: 20px;
+  padding: 0px;
+  margin: 0 auto;
 }
 .contatiner {
   display: block;
+  
 }
-.layout-cigarettes_image {
-  max-width: 343px;
+.layout-img {
+  width: 100%;
+  padding-bottom: 25px;
 }
 .layout-cigarettes_info {
-  padding-left: 30px;
+  padding-left: 25px; /* Звичайний відступ */
+  padding-bottom: 20px;
 }
+
+@media (max-width: 350px) 
+{
+  .layout-cigarettes_info {
+  padding-left: 15px;  
+
+  }
+  .price {
+    width: 150px;
+  }
+  
+.buy-line{
+  max-width: 265px;
+}
+}
+@media (max-width: 330px) 
+{
+  .layout-cigarettes_info {
+  padding-left: 5px;  
+  padding-right: 5px;
+  }
+}
+  
+
 .logo {
-  padding-top: 25px;
   font-weight: 600;
   color: #ffffff;
   font-size: 24px;
 }
 .line {
-  max-width: 283px;
-  max-height: 1px;
+ width: 283px;
+  height: 1px;
   background-color: #ffffff;
 }
 .buy-line {
@@ -51,7 +79,7 @@
   cursor: pointer;
   transition: background 200ms;
   color: #ffffff;
-  border-top-right-radius: 15px; /* Заокруглення лівого верхнього кута */
+  border-top-right-radius: 15px; 
   border-bottom-right-radius: 15px;
 }
 .button-buy:hover {
