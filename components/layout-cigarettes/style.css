@@ -1,87 +1,82 @@
-.layout-cigarettes {
-  max-width: 343px;
-  max-height: 500px;
-  background-color: #444355;
-  border-radius: 20px;
-  padding: 0px;
-  margin: 0 auto;
+.layout-products {
+	max-width: 343px;
+	max-height: 500px;
+	background-color: #444355;
+	border-radius: 20px;
+	padding: 0px;
+	margin: 0 auto;
 }
 .contatiner {
-  display: block;
-  
+	display: block;
 }
 .layout-img {
-  width: 100%;
-  padding-bottom: 25px;
+	width: 100%;
+	padding-bottom: 25px;
 }
 .layout-cigarettes_info {
-  padding-left: 25px; /* Звичайний відступ */
-  padding-bottom: 20px;
+	padding-left: 25px; /* Звичайний відступ */
+	padding-bottom: 20px;
 }
 
-@media (max-width: 350px) 
-{
-  .layout-cigarettes_info {
-  padding-left: 15px;  
+@media (max-width: 350px) {
+	.layout-cigarettes_info {
+		padding-left: 15px;
+	}
+	.price {
+		width: 150px;
+	}
 
-  }
-  .price {
-    width: 150px;
-  }
-  
-.buy-line{
-  max-width: 265px;
+	.buy-line {
+		max-width: 265px;
+	}
 }
+@media (max-width: 330px) {
+	.layout-cigarettes_info {
+		padding-left: 5px;
+		padding-right: 5px;
+	}
 }
-@media (max-width: 330px) 
-{
-  .layout-cigarettes_info {
-  padding-left: 5px;  
-  padding-right: 5px;
-  }
-}
-  
 
 .logo {
-  font-weight: 600;
-  color: #ffffff;
-  font-size: 24px;
+	font-weight: 600;
+	color: #ffffff;
+	font-size: 24px;
 }
 .line {
- width: 283px;
-  height: 1px;
-  background-color: #ffffff;
+	width: 283px;
+	height: 1px;
+	background-color: #ffffff;
 }
 .buy-line {
-  display: flex;
-  padding-top: 20px;
-  max-width: 295px;
+	display: flex;
+	padding-top: 20px;
+	max-width: 295px;
 }
 .price {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 50px;
-  width: 184px;
-  background-color: #ffffff;
-  font-weight: bolder;
-  font-size: 24px;
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 50px;
+	width: 184px;
+	background-color: #ffffff;
+	font-weight: bolder;
+	font-size: 24px;
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
 }
 .button-buy {
-  width: 111px;
-  min-height: 50px;
-  font-size: 24px;
-  font-weight: bold;
-  background-color: #569ea6;
-  border: 1px solid #569ea6;
-  cursor: pointer;
-  transition: background 200ms;
-  color: #ffffff;
-  border-top-right-radius: 15px; 
-  border-bottom-right-radius: 15px;
+	width: 111px;
+	min-height: 50px;
+	font-size: 24px;
+	font-weight: bold;
+	background-color: #569ea6;
+	border: 1px solid #569ea6;
+	cursor: pointer;
+	transition: background 200ms;
+	color: #ffffff;
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
 }
 .button-buy:hover {
-  background-color: #388f99;
+	background-color: #388f99;
 }
