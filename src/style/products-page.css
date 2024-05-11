@@ -65,36 +65,33 @@
 	font-size: 24px;
 }
 .line {
-	width: 283px;
+	width: 85%;
 	height: 1px;
 	background-color: #ffffff;
+	margin-bottom: 20px;
 }
 .buy-line {
 	display: flex;
-	padding-top: 20px;
-	max-width: 295px;
+	justify-content: center;
+	width: 100%;
+	height: 50px;
 }
 .price {
 	display: flex;
-	align-items: center;
 	justify-content: center;
-	min-height: 50px;
-	width: 184px;
+	align-items: center;
 	background-color: #ffffff;
-	font-weight: bolder;
+	font-weight: 700;
 	font-size: 24px;
 	border-top-left-radius: 15px;
 	border-bottom-left-radius: 15px;
+	padding: 0px 30px;
 }
 .button-buy {
-	width: 111px;
-	min-height: 50px;
+	padding: 0px 30px;
 	font-size: 24px;
-	font-weight: bold;
+	font-weight: 700;
 	background-color: #569ea6;
-	border: 1px solid #569ea6;
-	cursor: pointer;
-	transition: background 200ms;
 	color: #ffffff;
 	border-top-right-radius: 15px;
 	border-bottom-right-radius: 15px;
@@ -167,11 +164,6 @@
 	transition: all 0.5s ease;
 	text-align: center;
 }
-
-@media (max-width: 768px) {
-}
-@media (max-width: 420px) {
-}
 ul li:not(hover) {
 	transition: all 0.5s ease 0s;
 }
@@ -194,7 +186,7 @@ ul li.active {
 	transform: rotate(-45deg);
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
 	.header__inner {
 		padding-left: 100px;
 	}
@@ -225,8 +217,8 @@ ul li.active {
 }
 
 @media (max-width: 430px) {
-	.logo {
-		font-size: 18px;
+	.header__inner {
+		padding-bottom: 100px;
 	}
 	.header__text {
 		font-size: 16px;
@@ -248,16 +240,19 @@ ul li.active {
 	}
 }
 @media (max-width: 340px) {
-	.price {
-		width: 150px;
-		font-size: 18px;
-	}
-	.button-buy {
-		width: 80px;
+	.logo {
 		font-size: 20px;
 	}
-	.line {
-		width: 200px;
+	.price {
+		padding: 0px 25px;
+		font-size: 20px;
+	}
+	.header__heading {
+		font-size: 38px;
+	}
+	.button-buy {
+		padding: 0px 25px;
+		font-size: 20px;
 	}
 	.pagination__inner ul li {
 		font-size: 15px;
