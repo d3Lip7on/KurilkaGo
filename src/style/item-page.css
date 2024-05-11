@@ -1,0 +1,145 @@
+.product {
+	padding: 100px 100px;
+	background-color: #22222e;
+}
+
+.product__inner {
+	padding: 100px 90px;
+	border-radius: 25px;
+	background: rgb(68, 67, 85);
+	display: flex;
+	gap: 30px;
+}
+
+/* slider */
+.splide__arrow {
+	background: none;
+	width: 60px;
+}
+.splide__arrow svg {
+	width: 60px;
+	height: 60px;
+}
+
+.splide__slide img {
+	width: 100%;
+	height: auto;
+	width: 590px;
+	height: 590px;
+	object-fit: cover;
+}
+.thumbnails {
+	display: flex;
+	margin: 1rem auto 0;
+	padding: 0;
+	justify-content: center;
+}
+
+.thumbnail {
+	width: 104px;
+	height: 104px;
+	overflow: hidden;
+	list-style: none;
+	margin: 0 0.2rem;
+	cursor: pointer;
+	border-radius: 25px;
+	opacity: 0.4;
+}
+
+.thumbnail img {
+	width: 100%;
+	height: auto;
+	width: 104px;
+	height: 104px;
+	object-fit: cover;
+}
+
+.thumbnail.is-active {
+	opacity: 1;
+}
+.slider {
+	overflow: hidden;
+	position: relative;
+	border-radius: 25px;
+}
+.thumbnail-slider {
+	border-radius: 0px 0px 25px 25px;
+	background: rgba(34, 34, 46, 0.75);
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding-bottom: 15px;
+}
+/* info	 */
+.product__image {
+	object-fit: cover;
+	width: 590px;
+}
+.product__info {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	max-width: 620px;
+	width: 100%;
+}
+.product__name {
+	color: rgb(255, 255, 255);
+	font-size: 32px;
+	font-weight: 700;
+}
+.product__line {
+	width: 614px;
+	height: 5px;
+	background-color: rgb(255, 255, 255);
+	border-radius: 25px;
+}
+.product__description {
+	color: rgb(255, 255, 255);
+	font-size: 18px;
+	font-weight: 400;
+}
+.product__line-cropped {
+	width: 305px;
+	height: 5px;
+	background-color: rgb(255, 255, 255);
+	border-radius: 25px;
+}
+.product__characteristic {
+	color: rgb(255, 255, 255);
+	font-size: 18px;
+	font-weight: 500;
+	max-width: 268px;
+}
+.product__buy-block {
+	display: flex;
+	flex-direction: column;
+	border-radius: 25px;
+	background: rgba(255, 255, 255, 0.2);
+}
+.product__price-box {
+	padding: 15px 30px;
+	display: flex;
+	justify-content: space-between;
+}
+.product__price {
+	color: rgb(255, 255, 255);
+	font-size: 30px;
+	font-weight: 700;
+}
+.product__amount {
+	color: rgb(255, 255, 255);
+	font-size: 20px;
+	font-weight: 400;
+}
+.product__button {
+	align-self: center;
+	width: 91%;
+	padding: 10px;
+	border-radius: 25px;
+	background: rgb(86, 158, 166);
+	color: rgb(255, 255, 255);
+	font-size: 32px;
+	font-weight: 700;
+	margin: 15px;
+}
