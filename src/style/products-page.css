@@ -40,15 +40,17 @@
 	max-width: 343px;
 	max-height: 500px;
 	background-color: #444355;
-	border-radius: 20px;
+	border-radius: 25px;
 }
 .layout-cigarettes_image {
 	width: 100%;
-	height: 100%;
 }
 .layout-img {
-	object-fit: fill;
+	border-radius: 25px 25px 0px 0px;
+	object-fit: cover;
+	object-position: center;
 	width: 343px;
+	height: 360px;
 	padding-bottom: 25px;
 }
 .layout-products__info {
@@ -57,26 +59,26 @@
 	align-items: center;
 	padding-bottom: 20px;
 }
-.logo {
+.layout-products__brand {
 	margin-left: 29px;
 	align-self: flex-start;
 	font-weight: 600;
 	color: #ffffff;
 	font-size: 24px;
 }
-.line {
+.layout-products__line {
 	width: 85%;
 	height: 1px;
 	background-color: #ffffff;
 	margin-bottom: 20px;
 }
-.buy-line {
+.layout-products__buy-line {
 	display: flex;
 	justify-content: center;
 	width: 100%;
 	height: 50px;
 }
-.price {
+.layout-products__price {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -87,7 +89,7 @@
 	border-bottom-left-radius: 15px;
 	padding: 0px 30px;
 }
-.button-buy {
+.layout-products__button {
 	padding: 0px 30px;
 	font-size: 24px;
 	font-weight: 700;
@@ -95,8 +97,9 @@
 	color: #ffffff;
 	border-top-right-radius: 15px;
 	border-bottom-right-radius: 15px;
+	transition: 0.2s;
 }
-.button-buy:hover {
+.layout-products__button:hover {
 	background-color: #388f99;
 }
 /* pagination */
@@ -131,14 +134,14 @@
 }
 
 .pag-button1:hover {
-	background-color: #3e757b;
+	background-color: #377b83;
 	transition: all 0.5s ease 0s;
 }
 .pag-button1:not(hover) {
 	transition: all 0.5s ease 0s;
 }
 .pag-button2:hover {
-	background-color: #3e757b;
+	background-color: #377b83;
 	transition: all 0.5s ease 0s;
 }
 .pag-button2:not(hover) {
@@ -176,7 +179,7 @@ ul li:not(hover) {
 	transform: rotate(135deg);
 }
 ul li.active {
-	background-color: #706f8e;
+	background-color: #2d858f;
 }
 .arrow-next {
 	border: solid #fff;
@@ -201,6 +204,9 @@ ul li.active {
 	}
 	.header__heading {
 		font-size: 52px;
+	}
+	.pagination {
+		padding-bottom: 50px;
 	}
 	.pagination__inner ul li {
 		font-size: 20px;
@@ -240,17 +246,20 @@ ul li.active {
 	}
 }
 @media (max-width: 340px) {
-	.logo {
+	.layout-products__brand {
 		font-size: 20px;
 	}
-	.price {
+	.layout-products__price {
 		padding: 0px 25px;
 		font-size: 20px;
+	}
+	.header__inner {
+		padding-bottom: 70px;
 	}
 	.header__heading {
 		font-size: 38px;
 	}
-	.button-buy {
+	.layout-products__button {
 		padding: 0px 25px;
 		font-size: 20px;
 	}
