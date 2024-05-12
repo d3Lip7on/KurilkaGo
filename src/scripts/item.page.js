@@ -1,7 +1,10 @@
 var splide = new Splide('#main-slider', {
+	width: 590,
 	pagination: false,
 	breakpoints: {
-		1500: {},
+		1024: {
+			pagination: true,
+		},
 	},
 });
 
