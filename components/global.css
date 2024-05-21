@@ -5,7 +5,7 @@
 	margin: 0;
 	border: 0;
 	box-sizing: border-box;
-	font-family: "Montserrat", sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 *:focus,
@@ -20,6 +20,12 @@ footer,
 header,
 aside {
 	display: block;
+}
+
+header,
+footer,
+section {
+	padding: 0 10px;
 }
 
 html,
@@ -79,7 +85,7 @@ textarea {
 	scroll-margin-block: 5ex;
 }
 
-.container{
+.container {
 	max-width: 1420px;
 	margin: 0 auto;
 }
