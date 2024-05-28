@@ -72,3 +72,17 @@ class Liquid(models.Model):
     type_charge = models.CharField(max_length=50)
     price = models.DecimalField(max_digits=10, decimal_places=2)
     # image = models.ImageField(upload_to='liquid_images/', null=True, blank=True)
+
+class Vape(models.Model):
+    title = models.CharField(max_length=255)
+    description = models.TextField()
+    capacity_liquid = models.IntegerField()
+    type = models.CharField(max_length=100)
+    atomizer = models.CharField(max_length=100)
+    vape_refuel = models.CharField(max_length=100)
+    power = models.IntegerField()
+    capacity_battery = models.IntegerField()
+    type_battery = models.CharField(max_length=100)
+    type_charge = models.CharField(max_length=100)
+    price = models.FloatField()
+    image = models.BinaryField()
