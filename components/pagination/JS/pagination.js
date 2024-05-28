@@ -1,4 +1,6 @@
-const links = document.querySelectorAll(".link");
+'use strict';
+
+const links = document.querySelectorAll(".link a");
 const prevButton = document.querySelector(".pag-button1");
 const nextButton = document.querySelector(".pag-button2");
 
@@ -6,9 +8,10 @@ let currentValue = 1;
 
 function setActiveLink() {
   for (let link of links) {
-    link.classList.remove("active");
+    link.parentElement.classList.remove("active");
   }
-  links[currentValue - 1].classList.add("active");
+  links[currentValue - 1].parentElement.classList.add("active");
+  window.location.href = links[currentValue - 1].href; // Переходимо за посиланням
 }
 
 function handlePrevClick() {
@@ -26,12 +29,14 @@ function handleNextClick() {
 }
 
 function handleLinkClick(event) {
-  currentValue = parseInt(event.target.textContent);
+  event.preventDefault(); // Зупиняє стандартну дію посилання
+  currentValue = Array.from(links).indexOf(event.target) + 1;
   setActiveLink();
 }
 
 prevButton.addEventListener("click", handlePrevClick);
 nextButton.addEventListener("click", handleNextClick);
+
 links.forEach((link) => {
   link.addEventListener("click", handleLinkClick);
 });
