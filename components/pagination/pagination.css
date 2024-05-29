@@ -120,3 +120,6 @@ ul li.active {
   padding: 3px;
   -webkit-transform: rotate(-45deg);
 }
+.pagination__inner {
+  display: flex;
+}
