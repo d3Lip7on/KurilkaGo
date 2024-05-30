@@ -51,29 +51,7 @@ def getCigarette(request, id):
 
 def getDisposableVapes(request, page):
 
-    #disposable_vape_page = DisposableVape.objects.all()[(page - 1) * 12: page * 12]
-    disposable_vape_page = [
-        {
-            'id': 1,
-            'title': 'Malborro',
-            'price': 10
-        },
-        {
-            'id': 2,
-            'title': 'Parlage',
-            'price': 23
-        },
-        {
-            'id': 3,
-            'title': 'fawe',
-            'price': 23
-        },
-        {
-            'id': 4,
-            'title': 'Pafadrlage',
-            'price': 23
-        },
-    ]
+    disposable_vape_page = DisposableVape.objects.all()[(page - 1) * 12: page * 12]
 
     return render(request, 'products-page.html', {
         "title": 'E-Cig',
@@ -130,3 +108,17 @@ def getLiquids(request, page):
 def getLiquid(request, id):
     this_liquid = get_object_or_404(Liquid, id=id)
     return render(request, 'item-page.html', {"product": this_liquid})
+
+def getVapes(request, page):
+
+    this_vape = Vape.objects.all()[(page - 1) * 12: page * 12]
+    return render(request, 'products-page.html', {
+        'title': 'Vapes',
+        'product_url': '/vape/',
+        "products": this_vape,
+    })
+
+
+def getVape(request, id):
+    this_vape = get_object_or_404(Vape, id=id)
+    return render(request, 'item-page.html', {"product": this_vape})

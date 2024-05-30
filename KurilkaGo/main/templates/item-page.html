@@ -9,14 +9,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
           rel="stylesheet"/>
     <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="{%static 'style/global.css'%}"/>
-    <link rel="stylesheet" href="{%static 'style/item-page.css'%}"/>
+    <link rel="stylesheet" href="{%static 'css/global.css'%}"/>
+    <link rel="stylesheet" href="{%static 'css/item-page.css'%}"/>
 </head>
 <body>
 <!-- navbar -->
 <nav class="navbar">
     <div class="navbar__main">
-        <a href="#"><img src="{%static 'img/logo_white.svg'%}" alt="" class="navbar__logo"/></a>
+        <a href="/"><img src="{%static 'img/logo_white.svg'%}" alt="" class="navbar__logo"/></a>
         <div class="navbar__right">
             <form action="#">
                 <div class="navbar__search">
@@ -115,10 +115,10 @@
                 <p class="product__description">{{ product.description }}
                 </p>
                 <div class="product__line-cropped"></div>
-                <p class="product__characteristic">Brand - {{ product.brand }}</p>
+                <p class="product__characteristic">Brand - {{ product.producer }} {{ product.brand }}</p>
                 <p class="product__characteristic">Type - {{ product.type }}</p>
                 <p class="product__characteristic">Strength - {{product.strength }}</p>
-				<p class="product__characteristic">Nicotine - {{ product.nicotine }}</p>
+				<p class="product__characteristic">Nicotine - {{ product.nicotine_content }}</p>
 				<p class="product__characteristic"></p>
                 <div class="product__buy-block">
                     <div class="product__price-box">
@@ -173,6 +173,6 @@
     </div>
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-<script src="{%static 'scripts/item.page.js'%}"></script>
+<script src="{%static 'js/item.page.js'%}"></script>
 </body>
 </html>

@@ -13,5 +13,7 @@ urlpatterns = [
     path('iqos/<int:id>', views.getIqos),
     path('liquids/<int:page>', views.getLiquids),
     path('liquid/<int:id>', views.getLiquid),
+    path('vapes/<int:page>', views.getVapes),
+    path('vape/<int:id>', views.getVape),
     path('about', views.about)
 ]
