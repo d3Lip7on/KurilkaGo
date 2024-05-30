@@ -1,7 +1,8 @@
-.main {
-	background: url(/src/images/homepage-man.png);
-}
 
+/* .main {
+	background: url(../static/img/homepage-man.png);
+}
+ */
 .header {
 	padding-top: 324px;
 	display: flex;
