@@ -1,3 +1,4 @@
+{%load static%}
 <!DOCTYPE html>
 <html>
 	<head>
@@ -6,8 +7,8 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
-		<link rel="stylesheet" href="/src/style/homepage.css" />
-		<link rel="stylesheet" href="/src/style/global.css" />
+		<link rel="stylesheet" href=" {%static 'css/homepage.css'%}" />
+		<link rel="stylesheet" href=" {%static 'css/global.css'%}" />
 		<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 		<link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet" />
 	</head>
@@ -15,30 +16,29 @@
 		<!-- navbar -->
 		<nav class="navbar">
 			<div class="navbar__main">
-				<a href="#"><img src="/src/images/logo_white.svg" alt="" class="navbar__logo" /></a>
+				<a href="#"><img src=" {%static 'img/logo_white.svg'%}" alt="" class="navbar__logo" /></a>
 				<div class="navbar__right">
 					<form action="#">
 						<div class="navbar__search">
-							<button type="submit" class="navbar__search-submit"><img src="/src/images/magnifying_glass.svg" alt="" /></button>
+							<button type="submit" class="navbar__search-submit"><img src="{%static 'img//magnifying_glass.svg'%}" alt="" /></button>
 							<input type="text" class="navbar__search-label" placeholder="Search for ..." />
 						</div>
 					</form>
-					<a href="#cart"><img src="/src/images/cart.svg" class="navbar__cart" alt="" /></a>
-					<a href="#account"><img src="/src/images/human.svg" class="navbar__account" alt="" /></a>
+					<a href="#cart"><img src="{%static 'img/cart.svg'%}" class="navbar__cart" alt="" /></a>
+					<a href="#account"><img src="{%static 'img/human.svg'%}" class="navbar__account" alt="" /></a>
 				</div>
 			</div>
 			<div class="navbar__search-adaptive">
 				<form action="#">
 					<div class="navbar__label-adaptive">
 						<input type="text" class="navbar__search-label" placeholder="Search for ..." />
-						<button type="submit" class="navbar__search-submit"><img src="/src/images/magnifying_glass.svg" alt="" /></button>
+						<button type="submit" class="navbar__search-submit"><img src="{%static 'img/magnifying_glass.svg'%}" alt="" /></button>
 					</div>
 				</form>
 			</div>
 		</nav>
 		<!-- main -->
-		<main class="main">
-			<!-- header -->
+		<main class="main" style="background: url({% static 'img/homepage-man.png'%})">			<!-- header -->
 			<header class="header">
 				<p class="header__heading">Indulge in Excellence!</p>
 				<p class="header__description">Explore Premium Tobacco Products Online.<br />Quality Selections Await!<br />Experience Luxury in Every Puff.</p>
@@ -51,7 +51,7 @@
 						<div class="splide__track">
 							<ul class="splide__list">
 								<li class="splide__slide">
-									<div class="slide slide__first">
+									<div class="slide slide__first" style="background-image: url({%static 'img/slider-image-1.png'%})">
 										<div class="slide__arrow-container"></div>
 										<div class="slide__content">
 											<h2 class="slide__heading">DISCOVER</h2>
@@ -80,7 +80,7 @@
 				<div class="container">
 					<div class="category__blocks">
 						<a href="/cigarettes/1">
-							<div class="category__block category__block1">
+							<div class="category__block category__block1" style="background: url({%static 'img/Cigaretes.png'%})">
 								<div class="category__text-blur">
 									<div class="category__blur"></div>
 									<p class="category__text">Cigarettes</p>
@@ -88,7 +88,7 @@
 							</div>
 						</a>
 						<a href="/liquids/1">
-							<div class="category__block category__block2">
+							<div class="category__block category__block2" style="background: url({%static 'img/Cigar.png'%})">
 								<div class="category__text-blur">
 									<div class="category__blur"></div>
 									<p class="category__text">Liquid</p>
@@ -96,7 +96,7 @@
 							</div>
 						</a>
 						<a href="/hookahs/1">
-							<div class="category__block category__block3">
+							<div class="category__block category__block3" style="background: url({%static 'img/Hookah.png'%});">
 								<div class="category__text-blur">
 									<div class="category__blur"></div>
 									<p class="category__text">Hookah</p>
@@ -104,7 +104,7 @@
 							</div>
 						</a>
 						<a href="">
-							<div class="category__block category__block4">
+							<div class="category__block category__block4" style="background: url({%static 'img/Pod-system.png'%});">
 								<div class="category__text-blur">
 									<div class="category__blur"></div>
 									<p class="category__text">Pod system</p>
@@ -112,7 +112,7 @@
 							</div>
 						</a>
 						<a href="/disposablevapes/1">
-							<div class="category__block category__block5">
+							<div class="category__block category__block5" style="background: url({%static 'img/E-cig.png'%});">
 								<div class="category__text-blur">
 									<div class="category__blur"></div>
 									<p class="category__text">E-sig</p>
@@ -120,7 +120,7 @@
 							</div>
 						</a>
 						<a href="/iqoses/1">
-							<div class="category__block category__block6">
+							<div class="category__block category__block6" style="background: url({%static 'img/IQOS.png%});">
 								<div class="category__text-blur">
 									<div class="category__blur"></div>
 									<p class="category__text">IQOS</p>
@@ -140,29 +140,29 @@
 						<p class="footer__address-text">ul. Puszkina dom Kalatuszkina loc. 88</p>
 						<p class="footer__address-copyright">© 2024 Kurilka Go. Warsaw</p>
 					</div>
-					<a class="footer__logo-icon-href" href="#"><img class="logo__icon" src="/src/images/Logo_white.svg" alt="KurilkaGo" /></a>
+					<a class="footer__logo-icon-href" href="#"><img class="logo__icon" src="{%static 'img/Logo_white.svg'%}" alt="KurilkaGo" /></a>
 					<div class="footer__contacts">
 						<div class="contacts__mail">
-							<img class="mail-icon" src="/src/images/mail_icon.svg" alt="error" />
+							<img class="mail-icon" src="{%static 'img/mail_icon.svg'%}" alt="error" />
 							<h1 class="mail-paragraf">kurilkago@gmail.com</h1>
 						</div>
 						<div class="contacts__number">
-							<img class="number-icon" src="/src/images/telephon_icon.svg" alt="error" />
+							<img class="number-icon" src="{%static 'img/telephon_icon.svg'%}" alt="error" />
 							<h1 class="number-paragraf">+48123456789</h1>
 						</div>
 
 						<p class="contacts__text">Have any questions? Give us a call any day from 8:55 AM to 9:05 PM</p>
 
 						<div class="contacts__socials">
-							<a href="https://uk.wikipedia.org/wiki/Instagram"><img class="instagram" src="/src/images/instagram_icon.svg" alt="instagram" /></a>
-							<a href="https://uk.wikipedia.org/wiki/Telegram"><img class="telegram" src="/src/images/telegram_icon.svg" alt="telegram" /></a>
-							<a href="https://uk.wikipedia.org/wiki/WhatsApp"><img class="watsap" src="/src/images/watsap_icon.svg" alt="watsap" /></a>
-							<a href="https://uk.wikipedia.org/wiki/Твіттер"><img class="twitter" src="/src/images/xenia_icon.svg" alt="Twitter" /></a>
+							<a href="https://uk.wikipedia.org/wiki/Instagram"><img class="instagram" src="{%static 'img/instagram_icon.svg'%}" alt="instagram" /></a>
+							<a href="https://uk.wikipedia.org/wiki/Telegram"><img class="telegram" src="{%static 'img/telegram_icon.svg'%}" alt="telegram" /></a>
+							<a href="https://uk.wikipedia.org/wiki/WhatsApp"><img class="watsap" src="{%static 'img/watsap_icon.svg'%}" alt="watsap" /></a>
+							<a href="https://uk.wikipedia.org/wiki/Твіттер"><img class="twitter" src="{%static 'img/xenia_icon.svg'%}" alt="Twitter" /></a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</footer>
-		<script src="/src/scripts/main-page-slider.js"></script>
+		<script src="{%static 'scripts/main-page-slider.js'%}"></script>
 	</body>
 </html>
