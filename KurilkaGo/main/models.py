@@ -2,87 +2,120 @@ from django.db import models
 
 # Create your models here.
 class Cigarette(models.Model):
-    title = models.CharField(max_length=100)
-    producer = models.CharField(max_length=100)
-    type_description = models.CharField(max_length=200)
+    title = models.TextField()
+    producer = models.TextField()
+    description = models.TextField()
     number = models.IntegerField()
-    strength = models.CharField(max_length=50)
-    flavor = models.CharField(max_length=50)
-    nicotine_content = models.CharField(max_length=50)
-    thickness = models.CharField(max_length=50)
-    resin_content = models.CharField(max_length=50)
-    filter_presence = models.BooleanField(default=False)
-    price = models.DecimalField(max_digits=10, decimal_places=2)
-    # image = models.ImageField(upload_to='cigarette_images/', null=True, blank=True)
+    strength = models.TextField()
+    flavor = models.TextField()
+    nicotine_content = models.IntegerField()
+    thickness = models.TextField()
+    resin_content = models.IntegerField()
+    filter_presence = models.IntegerField()
+    price = models.FloatField()
+    image = models.BinaryField()
+
+    class Meta:
+        db_table = 'cigarettes'  # Замените на фактическое имя вашей таблицы
+
+    def __str__(self):
+        return self.name
 
 class DisposableVape(models.Model):
-    producer = models.CharField(max_length=100)
-    type = models.CharField(max_length=100)
+    producer = models.TextField()
+    type = models.TextField()
     description = models.TextField()
     number_pulls = models.IntegerField()
     number = models.IntegerField()
-    strength = models.CharField(max_length=50)
-    nicotine_content = models.CharField(max_length=50)
-    volume = models.CharField(max_length=50)
-    price = models.DecimalField(max_digits=10, decimal_places=2)
-    # image = models.ImageField(upload_to='disposable_vape_images/', null=True, blank=True)
-
-class Heating(models.Model):
-    title = models.CharField(max_length=100)
-    description = models.TextField()
-    holder_charge = models.CharField(max_length=50)
-    battery_charge = models.CharField(max_length=50)
-    weight = models.CharField(max_length=50)
-    color = models.CharField(max_length=50)
-    session_time = models.CharField(max_length=50)
-    package = models.CharField(max_length=100)
-    price = models.DecimalField(max_digits=10, decimal_places=2)
-    # image = models.ImageField(upload_to='heating_images/', null=True, blank=True)
-
-class Hookah(models.Model):
-    title = models.CharField(max_length=100)
-    brand = models.CharField(max_length=100)
-    color = models.CharField(max_length=50)
-    description = models.TextField()
-    height = models.CharField(max_length=50)
-    width = models.CharField(max_length=50)
-    hose_length = models.CharField(max_length=50)
-    bulb_volume = models.CharField(max_length=50)
-    material_flask = models.CharField(max_length=50)
-    material_bowl = models.CharField(max_length=50)
-    material_shaft = models.CharField(max_length=50)
-    material_tube = models.CharField(max_length=50)
-    connection_type = models.CharField(max_length=50)
-    shaft_diameter = models.CharField(max_length=50)
-    color_shaft = models.CharField(max_length=50)
-    color_bowl = models.CharField(max_length=50)
-    tubes_amount = models.IntegerField()
-    # image = models.ImageField(upload_to='hookah_images/', null=True, blank=True)
-
-class Liquid(models.Model):
-    title = models.CharField(max_length=100)
-    description = models.TextField()
-    capacity_liquid = models.CharField(max_length=50)
-    type = models.CharField(max_length=50)
-    atomizer = models.CharField(max_length=50)
-    vape_refuel = models.CharField(max_length=50)
-    power = models.CharField(max_length=50)
-    capacity_battery = models.CharField(max_length=50)
-    type_battery = models.CharField(max_length=50)
-    type_charge = models.CharField(max_length=50)
-    price = models.DecimalField(max_digits=10, decimal_places=2)
-    # image = models.ImageField(upload_to='liquid_images/', null=True, blank=True)
-
-class Vape(models.Model):
-    title = models.CharField(max_length=255)
-    description = models.TextField()
-    capacity_liquid = models.IntegerField()
-    type = models.CharField(max_length=100)
-    atomizer = models.CharField(max_length=100)
-    vape_refuel = models.CharField(max_length=100)
-    power = models.IntegerField()
-    capacity_battery = models.IntegerField()
-    type_battery = models.CharField(max_length=100)
-    type_charge = models.CharField(max_length=100)
+    strength = models.TextField()
+    nicotine_content = models.FloatField()
     price = models.FloatField()
     image = models.BinaryField()
+
+    class Meta:
+        db_table = 'disposable_vape'  # Замените на фактическое имя вашей таблицы
+
+    def __str__(self):
+        return self.name
+
+class Heating(models.Model):
+    title = models.TextField()
+    description = models.TextField()
+    holder_charge = models.FloatField()
+    battery_charge = models.FloatField()
+    weight = models.IntegerField()
+    color = models.TextField()
+    session_time = models.IntegerField()
+    package = models.TextField()
+    price = models.FloatField()
+    image = models.BinaryField()
+
+    class Meta:
+        db_table = 'heating'  # Замените на фактическое имя вашей таблицы
+
+    def __str__(self):
+        return self.name
+
+class Hookah(models.Model):
+    title = models.TextField()
+    brand = models.TextField()
+    color = models.TextField()
+    description = models.TextField()
+    height = models.IntegerField()
+    width = models.IntegerField()
+    hose_length = models.IntegerField()
+    bulb_volume = models.FloatField()
+    material_flask = models.TextField()
+    material_bowl = models.TextField()
+    material_shaft = models.TextField()
+    material_tube = models.TextField()
+    connection_type = models.TextField()
+    shaft_diameter = models.IntegerField()
+    color_shaft = models.TextField()
+    color_bowl = models.TextField()
+    tubes_amount = models.IntegerField()
+    image = models.BinaryField()
+    price = models.FloatField()
+
+    class Meta:
+        db_table = 'hookahs'  # Замените на фактическое имя вашей таблицы
+
+    def __str__(self):
+        return self.name
+
+class Liquid(models.Model):
+    title = models.TextField()
+    producer = models.TextField()
+    type = models.TextField()
+    strength = models.TextField()
+    taste = models.TextField()
+    nicotine_content = models.FloatField()
+    volume = models.TextField()
+    price = models.FloatField()
+    image = models.BinaryField()
+
+    class Meta:
+        db_table = 'liquids'  # Замените на фактическое имя вашей таблицы
+
+    def __str__(self):
+        return self.name
+
+class Vape(models.Model):
+    title = models.TextField()
+    description = models.TextField()
+    capacity_liquid = models.IntegerField()
+    type = models.TextField()
+    atomizer = models.TextField()
+    vape_refuel = models.TextField()
+    power = models.IntegerField()
+    capacity_battery = models.IntegerField()
+    type_battery = models.TextField()
+    type_charge = models.TextField()
+    price = models.FloatField()
+    image = models.BinaryField()
+
+    class Meta:
+        db_table = 'vapes'  # Замените на фактическое имя вашей таблицы
+
+    def __str__(self):
+        return self.name
