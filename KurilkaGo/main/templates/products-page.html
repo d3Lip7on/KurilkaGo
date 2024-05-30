@@ -82,14 +82,14 @@
                             <div class="arrow-prev"></div>
                         </button>
                         <ul id="pagination-list">
-                            <li class="link active" data-page="1"><a href="#">1</a></li>
-                            <li class="link" data-page="2"><a href="#">2</a></li>
-                            <li class="link" data-page="3"><a href="#">3</a></li>
-                            <li class="link" data-page="4"><a href="#">4</a></li>
-                            <li class="link" data-page="5"><a href="#">5</a></li>
-                            <li class="link" data-page="6"><a href="#">6</a></li>
-                            <li class="link" data-page="7"><a href="#">7</a></li>
-                            <li class="link" data-page="8"><a href="#">8</a></li>
+                            <li class="link {% if products_page == 1 %}active{% endif %}" data-page="1"><a href="{{ products_urls }}1">1</a></li>
+                            <li class="link {% if products_page == 2 %}active{% endif %}" data-page="2"><a href="{{ products_urls }}2">2</a></li>
+                            <li class="link {% if products_page == 3 %}active{% endif %}" data-page="3"><a href="{{ products_urls }}3">3</a></li>
+                            <li class="link {% if products_page == 4 %}active{% endif %}" data-page="4"><a href="{{ products_urls }}4">4</a></li>
+                            <li class="link {% if products_page == 5 %}active{% endif %}" data-page="5"><a href="{{ products_urls }}5">5</a></li>
+<!--                            <li class="link {% if products_page == 6 %}active{% endif %}" data-page="6"><a href="{{ products_urls }}6">6</a></li>-->
+<!--                            <li class="link {% if products_page == 7 %}active{% endif %}" data-page="7"><a href="{{ products_urls }}7">7</a></li>-->
+<!--                            <li class="link {% if products_page == 8 %}active{% endif %}" data-page="8"><a href="{{ products_urls }}8">8</a></li>-->
                         </ul>
                         <button class="pag-button2" id="next-button">
                             <div class="arrow-next"></div>

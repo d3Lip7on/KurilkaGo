@@ -4,6 +4,8 @@ from .models import *
 
 # Create your views here.
 
+page_size = 8
+
 def index(request):
     return render(request, 'homepage.html')
 
@@ -14,7 +16,7 @@ def about(request):
 
 def getCigarettes(request, page):
 
-    cigarettes_page = Cigarette.objects.all()[(page - 1) * 12: page * 12]
+    cigarettes_page = Cigarette.objects.all()[(page - 1) * page_size: page * page_size]
     # cigarettes_page = [
     #     {
     #         'id': 1,
@@ -39,6 +41,8 @@ def getCigarettes(request, page):
     # ]
     return render(request, 'products-page.html', {
         'title': 'Cigarettes',
+        'products_url': '/cigarettes/',
+        'products_page': page,
         'product_url': '/cigarette/',
         "products": cigarettes_page,
     })
@@ -51,10 +55,12 @@ def getCigarette(request, id):
 
 def getDisposableVapes(request, page):
 
-    disposable_vape_page = DisposableVape.objects.all()[(page - 1) * 12: page * 12]
+    disposable_vape_page = DisposableVape.objects.all()[(page - 1) * page_size: page * page_size]
 
     return render(request, 'products-page.html', {
         "title": 'E-Cig',
+        'products_url': '/disposablevapes/',
+        'products_page': page,
         'product_url': '/disposablevape/',
         "products": disposable_vape_page
     })
@@ -67,9 +73,11 @@ def getDisposableVape(request, id):
 
 def getHookahs(request, page):
 
-    hookahs_page = Hookah.objects.all()[(page - 1) * 12: page * 12]
+    hookahs_page = Hookah.objects.all()[(page - 1) * page_size: page * page_size]
     return render(request, 'products-page.html', {
         'title': 'Hookah',
+        'products_url': '/hookahs/',
+        'products_page': page,
         'product_url': '/hookah/',
         "products": hookahs_page,
     })
@@ -82,9 +90,11 @@ def getHookah(request, id):
 
 def getIqoses(request, page):
 
-    iqos_page = Heating.objects.all()[(page - 1) * 12: page * 12]
+    iqos_page = Heating.objects.all()[(page - 1) * page_size: page * page_size]
     return render(request, 'products-page.html', {
         'title': 'Iqos',
+        'products_url': '/iqoses/',
+        'products_page': page,
         'product_url': '/iqos/',
         "products": iqos_page,
     })
@@ -97,9 +107,11 @@ def getIqos(request, id):
 
 def getLiquids(request, page):
 
-    liquid_page = Liquid.objects.all()[(page - 1) * 12: page * 12]
+    liquid_page = Liquid.objects.all()[(page - 1) * page_size: page * page_size]
     return render(request, 'products-page.html', {
         'title': 'Liquid',
+        'products_url': '/liquids/',
+        'products_page': page,
         'product_url': '/liquid/',
         "products": liquid_page,
     })
@@ -111,9 +123,11 @@ def getLiquid(request, id):
 
 def getVapes(request, page):
 
-    this_vape = Vape.objects.all()[(page - 1) * 12: page * 12]
+    this_vape = Vape.objects.all()[(page - 1) * page_size: page * page_size]
     return render(request, 'products-page.html', {
         'title': 'Vapes',
+        'products_url': '/vapes/',
+        'products_page': page,
         'product_url': '/vape/',
         "products": this_vape,
     })
