@@ -4,6 +4,7 @@ from django.db import models
 class Cigarette(models.Model):
     title = models.TextField()
     producer = models.TextField()
+    type = models.TextField()
     description = models.TextField()
     number = models.IntegerField()
     strength = models.TextField()
@@ -29,8 +30,8 @@ class DisposableVape(models.Model):
     number = models.IntegerField()
     strength = models.TextField()
     nicotine_content = models.FloatField()
-    price = models.FloatField()
     image = models.BinaryField()
+    price = models.FloatField()
 
     class Meta:
         db_table = 'disposable_vape'  # Замените на фактическое имя вашей таблицы
