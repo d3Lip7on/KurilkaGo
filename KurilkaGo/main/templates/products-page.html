@@ -1,0 +1,148 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet"/>
+    <link rel="stylesheet" href="{% static 'css/pagination.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/global.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/products-page.css' %}"/>
+</head>
+<body>
+<!-- navbar -->
+<nav class="navbar">
+    <div class="navbar__main">
+        <a href="/"><img src="{%static 'img/logo_white.svg'%}" alt="" class="navbar__layout-products__brand"/></a>
+        <div class="navbar__right">
+            <form action="#">
+                <div class="navbar__search">
+                    <button type="submit" class="navbar__search-submit"><img src="{%static 'img/magnifying_glass.svg'%}"
+                                                                             alt=""/></button>
+                    <input type="text" class="navbar__search-label" placeholder="Search for ..."/>
+                </div>
+            </form>
+            <a href="#cart"><img src="{%static 'img/cart.svg'%}" class="navbar__cart" alt=""/></a>
+            <a href="#account"><img src="{%static 'img/human.svg'%}" class="navbar__account" alt=""/></a>
+        </div>
+    </div>
+    <div class="navbar__search-adaptive">
+        <form action="#">
+            <div class="navbar__label-adaptive">
+                <input type="text" class="navbar__search-label" placeholder="Search for ..."/>
+                <button type="submit" class="navbar__search-submit"><img src="{%static 'img/magnifying_glass.svg'%}"
+                                                                         alt=""/>
+                </button>
+            </div>
+        </form>
+    </div>
+</nav>
+<!-- header -->
+<header class="header" style="background: url({%static 'img/header-img-cig.png'%}) no-repeat">
+    <div class="container">
+        <div class="header__inner">
+            <h1 class="header__heading">{{ title }}</h1>
+            <p class="header__text">
+                Discover a wide array of top-quality cigarettes in our online store. From classic favorites to exclusive
+                blends, find the perfect smoke to suit your taste. Explore our diverse selection
+                and elevate your smoking experience today!
+            </p>
+        </div>
+    </div>
+</header>
+<section class="layout-products">
+    <div class="container">
+        <div class="layout-products__inner">
+            <div class="layout-products__items">
+                {% for product in products %}
+                <div class="layout-products__item">
+                    <a href="{{ product_url }}{{ product.id }}">
+                        <div class="layout-products__image">
+                            <img src="{% static 'img/test-img.png' %}" alt="" class="layout-img"/>
+                        </div>
+                        <div class="layout-products__info">
+                            <h4 class="layout-products__brand">{{ product.title }}</h4>
+                            <div class="layout-products__line"></div>
+                            <div class="layout-products__buy-line">
+                                <h3 class="layout-products__price">{{ product.price }} PLN</h3>
+                                <button class="layout-products__button">Buy</button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                {% endfor %}
+            </div>
+            <div class="pagination">
+                <div class="container">
+                    <div class="pagination__inner">
+                        <button class="pag-button1" id="prev-button">
+                            <div class="arrow-prev"></div>
+                        </button>
+                        <ul id="pagination-list">
+                            <li class="link {% if products_page == 1 %}active{% endif %}" data-page="1"><a href="{{ products_urls }}1">1</a></li>
+                            <li class="link {% if products_page == 2 %}active{% endif %}" data-page="2"><a href="{{ products_urls }}2">2</a></li>
+                            <li class="link {% if products_page == 3 %}active{% endif %}" data-page="3"><a href="{{ products_urls }}3">3</a></li>
+                            <li class="link {% if products_page == 4 %}active{% endif %}" data-page="4"><a href="{{ products_urls }}4">4</a></li>
+                            <li class="link {% if products_page == 5 %}active{% endif %}" data-page="5"><a href="{{ products_urls }}5">5</a></li>
+<!--                            <li class="link {% if products_page == 6 %}active{% endif %}" data-page="6"><a href="{{ products_urls }}6">6</a></li>-->
+<!--                            <li class="link {% if products_page == 7 %}active{% endif %}" data-page="7"><a href="{{ products_urls }}7">7</a></li>-->
+<!--                            <li class="link {% if products_page == 8 %}active{% endif %}" data-page="8"><a href="{{ products_urls }}8">8</a></li>-->
+                        </ul>
+                        <button class="pag-button2" id="next-button">
+                            <div class="arrow-next"></div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer__inner">
+            <div class="footer__address">
+                <h1 class="footer__address-hedding">Address:</h1>
+                <p class="footer__address-text">ul. Puszkina dom Kalatuszkina loc. 88</p>
+                <p class="footer__address-copyright">© 2024 Kurilka Go. Warsaw</p>
+            </div>
+            <a class="footer__logo-icon-href" href="#"><img class="logo__icon" src="{%static 'img/logo_white.svg'%}"
+                                                            alt="KurilkaGo"/></a>
+            <div class="footer__contacts">
+                <div class="contacts__mail">
+                    <img class="mail-icon" src="{%static 'img/mail_icon.svg'%}" alt="error"/>
+                    <h1 class="mail-paragraf">kurilkago@gmail.com</h1>
+                </div>
+                <div class="contacts__number">
+                    <img class="number-icon" src="{%static 'img/telephon_icon.svg'%}" alt="error"/>
+                    <h1 class="number-paragraf">+48123456789</h1>
+                </div>
+
+                <p class="contacts__text">Have any questions? Give us a call any day from 8:55 AM to 9:05 PM</p>
+
+                <div class="contacts__socials">
+                    <a href="https://uk.wikipedia.org/wiki/Instagram"><img class="instagram"
+                                                                           src="{%static 'img/instagram_icon.svg'%}"
+                                                                           alt="instagram"/></a>
+                    <a href="https://uk.wikipedia.org/wiki/Telegram"><img class="telegram"
+                                                                          src="{%static 'img/telegram_icon.svg'%}"
+                                                                          alt="telegram"/></a>
+                    <a href="https://uk.wikipedia.org/wiki/WhatsApp"><img class="watsap"
+                                                                          src="{%static 'img/watsap_icon.svg'%}"
+                                                                          alt="watsap"/></a>
+                    <a href="https://uk.wikipedia.org/wiki/Твіттер"><img class="twitter"
+                                                                         src="{%static 'img/xenia_icon.svg'%}"
+                                                                         alt="Twitter"/></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="{%static 'scripts/products-pagination.js'%}"></script>
+<script src="{%static 'scripts/pagination.js'%}"></script>
+</body>
+</html>

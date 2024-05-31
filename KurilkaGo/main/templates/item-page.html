@@ -1,0 +1,178 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="{%static 'css/global.css'%}"/>
+    <link rel="stylesheet" href="{%static 'css/item-page.css'%}"/>
+</head>
+<body>
+<!-- navbar -->
+<nav class="navbar">
+    <div class="navbar__main">
+        <a href="/"><img src="{%static 'img/logo_white.svg'%}" alt="" class="navbar__logo"/></a>
+        <div class="navbar__right">
+            <form action="#">
+                <div class="navbar__search">
+                    <button type="submit" class="navbar__search-submit"><img src="{%static 'img/magnifying_glass.svg'%}"
+                                                                             alt=""/></button>
+                    <input type="text" class="navbar__search-label" placeholder="Search for ..."/>
+                </div>
+            </form>
+            <a href="#cart"><img src="{%static 'img/cart.svg'%}" class="navbar__cart" alt=""/></a>
+            <a href="#account"><img src="{%static 'img/human.svg'%}" class="navbar__account" alt=""/></a>
+        </div>
+    </div>
+    <div class="navbar__search-adaptive">
+        <form action="#">
+            <div class="navbar__label-adaptive">
+                <input type="text" class="navbar__search-label" placeholder="Search for ..."/>
+                <button type="submit" class="navbar__search-submit"><img src="{%static 'img/magnifying_glass.svg'%}" alt=""/>
+                </button>
+            </div>
+        </form>
+    </div>
+</nav>
+<section class="product">
+    <div class="container">
+        <div class="product__inner">
+            <div class="slider">
+                <div class="main-slider">
+                    <div id="main-slider" class="splide">
+                        <div class="splide__arrows">
+                            <button class="splide__arrow splide__arrow--prev">
+                                <svg width="22.000000" height="51.000000" viewBox="0 0 22 51" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <defs/>
+                                    <path id="Line 16" d="M2 2L19 25" stroke="#FFFFFF" stroke-opacity="1.000000"
+                                          stroke-width="5.000000" stroke-linecap="round"/>
+                                    <path id="Line 17" d="M2 48L19 25" stroke="#FFFFFF" stroke-opacity="1.000000"
+                                          stroke-width="5.000000" stroke-linecap="round"/>
+                                </svg>
+                            </button>
+                            <button class="splide__arrow splide__arrow--next">
+                                <svg width="22.000000" height="51.000000" viewBox="0 0 22 51" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <defs/>
+                                    <path id="Line 16" d="M2 2L19 25" stroke="#FFFFFF" stroke-opacity="1.000000"
+                                          stroke-width="5.000000" stroke-linecap="round"/>
+                                    <path id="Line 17" d="M2 48L19 25" stroke="#FFFFFF" stroke-opacity="1.000000"
+                                          stroke-width="5.000000" stroke-linecap="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide">
+                                    <img src="{%static 'img/item-page-img.png'%}"/>
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="{%static 'img/item-page-img.png'%}" />
+                                </li>
+                                <li class="splide__slide">
+                                        <img src="{%static 'img/item-page-img.png'%}"/>
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="{%static 'img/item-page-img.png'%}"/>
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="{%static 'img/item-page-img.png'%}"/>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="thumbnail-slider">
+                    <ul id="thumbnails" class="thumbnails">
+                        <li class="thumbnail">
+                            <img src="{%static 'img/item-page-img.png'%}"/>
+                        </li>
+                        <li class="thumbnail">
+                            <img src="{%static 'img/item-page-img.png'%}"/>
+                        </li>
+                        <li class="thumbnail">
+                            <img src="{%static 'img/item-page-img.png'%}"/>
+                        </li>
+                        <li class="thumbnail">
+                            <img src="{%static 'img/item-page-img.png'%}"/>
+                        </li>
+                        <li class="thumbnail">
+                            <img src="{%static 'img/item-page-img.png'%}"/>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="product__info">
+                <h2 class="product__name">{{ product.title }}</h2>
+                <div class="product__line"></div>
+                <p class="product__description">{{ product.description }}
+                </p>
+                <div class="product__line-cropped"></div>
+                <p class="product__characteristic">Brand - {{ product.producer }} {{ product.brand }}</p>
+                <p class="product__characteristic">Type - {{ product.type }}</p>
+                <p class="product__characteristic">Strength - {{product.strength }}</p>
+				<p class="product__characteristic">Nicotine - {{ product.nicotine_content }}</p>
+				<p class="product__characteristic"></p>
+                <div class="product__buy-block">
+                    <div class="product__price-box">
+                        <h2 class="product__price">{{ product.price }} PLN</h2>
+                        <p class="product__amount">IS AVAILABLE</p>
+                    </div>
+                    <button class="product__button">Buy</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer__inner">
+            <div class="footer__address">
+                <h1 class="footer__address-hedding">Address:</h1>
+                <p class="footer__address-text">ul. Puszkina dom Kalatuszkina loc. 88</p>
+                <p class="footer__address-copyright">© 2024 Kurilka Go. Warsaw</p>
+            </div>
+            <a class="footer__logo-icon-href" href="#"><img class="logo__icon" src="{%static 'img/Logo_white.svg'%}"
+                                                            alt="KurilkaGo"/></a>
+            <div class="footer__contacts">
+                <div class="contacts__mail">
+                    <img class="mail-icon" src="{%static 'img/mail_icon.svg'%}" alt="error"/>
+                    <h1 class="mail-paragraf">kurilkago@gmail.com</h1>
+                </div>
+                <div class="contacts__number">
+                    <img class="number-icon" src="{%static 'img/telephon_icon.svg'%}" alt="error"/>
+                    <h1 class="number-paragraf">+48123456789</h1>
+                </div>
+
+                <p class="contacts__text">Have any questions? Give us a call any day from 8:55 AM to 9:05 PM</p>
+
+                <div class="contacts__socials">
+                    <a href="https://uk.wikipedia.org/wiki/Instagram"><img class="instagram"
+                                                                           src="{%static 'img/instagram_icon.svg'%}"
+                                                                           alt="instagram"/></a>
+                    <a href="https://uk.wikipedia.org/wiki/Telegram"><img class="telegram"
+                                                                          src="{%static 'img/telegram_icon.svg'%}"
+                                                                          alt="telegram"/></a>
+                    <a href="https://uk.wikipedia.org/wiki/WhatsApp"><img class="watsap"
+                                                                          src="{%static 'img/watsap_icon.svg'%}"
+                                                                          alt="watsap"/></a>
+                    <a href="https://uk.wikipedia.org/wiki/Твіттер"><img class="twitter"
+                                                                         src="{%static 'img/xenia_icon.svg'%}"
+                                                                         alt="Twitter"/></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+<script src="{%static 'js/item.page.js'%}"></script>
+</body>
+</html>
