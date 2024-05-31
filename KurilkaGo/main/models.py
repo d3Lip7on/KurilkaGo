@@ -20,7 +20,7 @@ class Cigarette(models.Model):
         db_table = 'cigarettes'  # Замените на фактическое имя вашей таблицы
 
     def __str__(self):
-        return self.name
+        return self.title
 
 class DisposableVape(models.Model):
     producer = models.TextField()

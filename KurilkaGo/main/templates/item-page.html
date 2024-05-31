@@ -70,7 +70,7 @@
                         <div class="splide__track">
                             <ul class="splide__list">
                                 <li class="splide__slide">
-                                    <img src="{%static 'img/item-page-img.png'%}"/>
+                                    <img src="data:image/jpeg;base64,{{ product.image_base64 }}"/>
                                 </li>
                                 <li class="splide__slide">
                                     <img src="{%static 'img/item-page-img.png'%}" />
@@ -87,26 +87,6 @@
                             </ul>
                         </div>
                     </div>
-                </div>
-
-                <div class="thumbnail-slider">
-                    <ul id="thumbnails" class="thumbnails">
-                        <li class="thumbnail">
-                            <img src="{%static 'img/item-page-img.png'%}"/>
-                        </li>
-                        <li class="thumbnail">
-                            <img src="{%static 'img/item-page-img.png'%}"/>
-                        </li>
-                        <li class="thumbnail">
-                            <img src="{%static 'img/item-page-img.png'%}"/>
-                        </li>
-                        <li class="thumbnail">
-                            <img src="{%static 'img/item-page-img.png'%}"/>
-                        </li>
-                        <li class="thumbnail">
-                            <img src="{%static 'img/item-page-img.png'%}"/>
-                        </li>
-                    </ul>
                 </div>
             </div>
             <div class="product__info">
@@ -140,7 +120,7 @@
                 <p class="footer__address-text">ul. Puszkina dom Kalatuszkina loc. 88</p>
                 <p class="footer__address-copyright">© 2024 Kurilka Go. Warsaw</p>
             </div>
-            <a class="footer__logo-icon-href" href="#"><img class="logo__icon" src="{%static 'img/Logo_white.svg'%}"
+            <a class="footer__logo-icon-href" href="/"><img class="logo__icon" src="{%static 'img/Logo_white.svg'%}"
                                                             alt="KurilkaGo"/></a>
             <div class="footer__contacts">
                 <div class="contacts__mail">
@@ -152,7 +132,7 @@
                     <h1 class="number-paragraf">+48123456789</h1>
                 </div>
 
-                <p class="contacts__text">Have any questions? Give us a call any day from 8:55 AM to 9:05 PM</p>
+                <p class="contacts__text">Have any questions? Give us a call any day from 8:55 AM to 9:05 AM (But better don't call us)</p>
 
                 <div class="contacts__socials">
                     <a href="https://uk.wikipedia.org/wiki/Instagram"><img class="instagram"

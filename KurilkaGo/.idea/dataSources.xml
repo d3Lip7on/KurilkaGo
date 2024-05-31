@@ -1,18 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="db" uuid="512a21f2-049b-4edd-98a7-9b9723e02492">
+    <data-source source="LOCAL" name="tobacco_shop" uuid="f9925b40-33e7-41ee-85b9-b5c5e5e8f27e">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:C:\other\project group\KurilkaGo\KurilkaGo\db.sqlite3</jdbc-url>
-      <working-dir>$ProjectFileDir$</working-dir>
-    </data-source>
-    <data-source source="LOCAL" name="tobacco_shop (1)" uuid="b35eb9d2-052c-4fa4-94b5-018c6383a580">
-      <driver-ref>sqlite.xerial</driver-ref>
-      <synchronize>true</synchronize>
-      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:C:\other\project group\KurilkaGo\KurilkaGo\tobacco_shop (1).db</jdbc-url>
+      <jdbc-url>jdbc:sqlite:C:\other\project group\KurilkaGo\KurilkaGo\tobacco_shop.db</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
       <libraries>
         <library>
