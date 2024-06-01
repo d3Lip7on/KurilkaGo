@@ -18,28 +18,7 @@ def about(request):
 
 def getCigarettes(request, page):
     cigarettes_page = Cigarette.objects.all()[(page - 1) * page_size: page * page_size]
-    # cigarettes_page = [
-    #     {
-    #         'id': 1,
-    #         'title': 'Malborro',
-    #         'price': 10
-    #     },
-    #     {
-    #         'id': 2,
-    #         'title': 'Parlage',
-    #         'price': 23
-    #     },
-    #     {
-    #         'id': 3,
-    #         'title': 'fawe',
-    #         'price': 23
-    #     },
-    #     {
-    #         'id': 4,
-    #         'title': 'Pafadrlage',
-    #         'price': 23
-    #     },
-    # ]
+
     for product in cigarettes_page:
         if product.image:
             product.image_base64 = base64.b64encode(product.image).decode('utf-8')
