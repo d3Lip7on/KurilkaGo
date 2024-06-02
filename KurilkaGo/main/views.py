@@ -25,12 +25,17 @@ def getCigarettes(request, page):
         else:
             product.image_base64 = ''
 
+    prev_page = 1 if page == 1 else page - 1
+    next_page = 3 if page == 3 else page + 1
+
     return render(request, 'products-page.html', {
         'title': 'Cigarettes',
         'products_url': '/cigarettes/',
         'products_page': page,
         'product_url': '/cigarette/',
         "products": cigarettes_page,
+        'prev_page': prev_page,
+        'next_page': next_page,
     })
 
 
