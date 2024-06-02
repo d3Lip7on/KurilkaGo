@@ -1,6 +1,5 @@
 from django.db import models
 
-# Create your models here.
 class Cigarette(models.Model):
     title = models.TextField()
     producer = models.TextField()
@@ -17,10 +16,7 @@ class Cigarette(models.Model):
     image = models.BinaryField()
 
     class Meta:
-        db_table = 'cigarettes'  # Замените на фактическое имя вашей таблицы
-
-    def __str__(self):
-        return self.title
+        db_table = 'cigarettes'  
 
 class DisposableVape(models.Model):
     producer = models.TextField()
@@ -34,10 +30,7 @@ class DisposableVape(models.Model):
     price = models.FloatField()
 
     class Meta:
-        db_table = 'disposable_vape'  # Замените на фактическое имя вашей таблицы
-
-    def __str__(self):
-        return self.name
+        db_table = 'disposable_vape'  
 
 class Heating(models.Model):
     title = models.TextField()
@@ -52,10 +45,7 @@ class Heating(models.Model):
     image = models.BinaryField()
 
     class Meta:
-        db_table = 'heating'  # Замените на фактическое имя вашей таблицы
-
-    def __str__(self):
-        return self.name
+        db_table = 'heating' 
 
 class Hookah(models.Model):
     title = models.TextField()
@@ -79,10 +69,7 @@ class Hookah(models.Model):
     price = models.FloatField()
 
     class Meta:
-        db_table = 'hookahs'  # Замените на фактическое имя вашей таблицы
-
-    def __str__(self):
-        return self.name
+        db_table = 'hookahs'  
 
 class Liquid(models.Model):
     title = models.TextField()
@@ -96,10 +83,7 @@ class Liquid(models.Model):
     image = models.BinaryField()
 
     class Meta:
-        db_table = 'liquids'  # Замените на фактическое имя вашей таблицы
-
-    def __str__(self):
-        return self.name
+        db_table = 'liquids'  
 
 class Vape(models.Model):
     title = models.TextField()
@@ -116,7 +100,4 @@ class Vape(models.Model):
     image = models.BinaryField()
 
     class Meta:
-        db_table = 'vapes'  # Замените на фактическое имя вашей таблицы
-
-    def __str__(self):
-        return self.name
+        db_table = 'vapes'  
