@@ -122,6 +122,21 @@
 	height: 54px;
 }
 
+.pag-button1 a{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+.pag-button2 a{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+
 .pag-button1 {
 	border-top-left-radius: 15px;
 	border-bottom-left-radius: 15px;
@@ -167,6 +182,13 @@
 	transition: all 0.5s ease;
 	text-align: center;
 }
+
+.pagination__inner ul li a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
 ul li:not(hover) {
 	transition: all 0.5s ease 0s;
 }
@@ -275,4 +297,5 @@ ul li.active {
 		height: 30px;
 		line-height: 30px;
 	}
+	
 }

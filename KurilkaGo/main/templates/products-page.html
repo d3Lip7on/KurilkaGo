@@ -79,7 +79,9 @@
                 <div class="container">
                     <div class="pagination__inner">
                         <button class="pag-button1" id="prev-button">
-                            <div class="arrow-prev"></div>
+													<a href="{{ products_urls }}{{ prev_page }}">
+														<div class="arrow-prev"></div>
+													</a>        
                         </button>
                         <ul id="pagination-list">
                             <li class="link {% if products_page == 1 %}active{% endif %}" data-page="1"><a href="{{ products_urls }}1">1</a></li>
@@ -92,7 +94,9 @@
 <!--                            <li class="link {% if products_page == 8 %}active{% endif %}" data-page="8"><a href="{{ products_urls }}8">8</a></li>-->
                         </ul>
                         <button class="pag-button2" id="next-button">
-                            <div class="arrow-next"></div>
+													<a href="{{ products_urls }}{{ next_page }}">
+														<div class="arrow-next"></div>
+													</a> 
                         </button>
                     </div>
                 </div>
