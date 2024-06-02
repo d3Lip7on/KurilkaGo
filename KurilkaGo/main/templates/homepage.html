@@ -8,11 +8,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin/>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
           rel="stylesheet"/>
-    <link rel="stylesheet" href=" {%static 'css/homepage.css'%}"/>
-    <link rel="stylesheet" href=" {%static 'css/global.css'%}"/>
-    <link href="{% static 'splide/splide.min.css' %}" rel="stylesheet"/>
-    <script src="{% static 'splide/splide.min.js' %}"></script>
-
+    <link rel="stylesheet" href=" {% static 'css/homepage.css' %}"/>
+    <link rel="stylesheet" href=" {% static 'css/global.css' %}"/>
+    <!-- <link href="{% static 'splide/splide.min.css' %}" rel="stylesheet"/> -->
+    <!-- <script src="{% static 'splide/splide.min.js' %}"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script> 
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet" />
 </head>
 <body>
 <!-- navbar -->
@@ -42,12 +43,12 @@
     </div>
 </nav>
 <!-- main -->
-<main class="main" style="background: url({% static 'img/homepage-man.png'%})">            <!-- header -->
+<main class="main" style="background: url({% static 'img/homepage-man.png' %})">            <!-- header -->
     <header class="header">
         <p class="header__heading">Indulge in Excellence!</p>
         <p class="header__description">Explore Premium Tobacco Products Online.<br/>Quality Selections Await!<br/>Experience
             Luxury in Every Puff.</p>
-        <a href="#section-content" class="header__button">Shop Now</a>
+        <a href="#section-content" class="header__button" style="color: rgb(255, 255, 255);">Shop Now</a>
     </header>
     <!-- slider -->
     <section class="homepage__slider">
@@ -68,7 +69,7 @@
                             </div>
                         </li>
                         <li class="splide__slide">
-                            <div class="slide slide__second">
+                            <div class="slide slide__second" style="background-image: url({%static 'img/slider-image-2.png'%})">
                                 <div class="slide__arrow-container"></div>
                                 <div class="slide__content">
                                     <h2 class="slide__heading">Exclusive Deals!</h2>
@@ -183,6 +184,6 @@
         </div>
     </div>
 </footer>
-<script src="{%static 'scripts/main-page-slider.js'%}"></script>
+<script src="{%static 'js/main-page-slider.js'%}"></script>
 </body>
 </html>
