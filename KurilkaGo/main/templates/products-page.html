@@ -41,7 +41,15 @@
     </div>
 </nav>
 <!-- header -->
-<header class="header" style="background: url({%static 'img/header-img-cig.png'%}) no-repeat">
+<header class="header" style="background:
+{% if title == 'Cigarettes' %} url({%static 'img/header-img-cig.png' %}) {% endif%}
+{% if title == 'E-Cig' %} url({%static 'img/header-img-esig.png' %}) {% endif%}
+{% if title == 'Hookah' %} url({%static 'img/header-img-hookah.png' %}) {% endif%}
+{% if title == 'Iqos' %} url({%static 'img/header-img-iqos.png' %}) {% endif%}
+{% if title == 'Liquid' %} url({%static 'img/header-img-cig.png' %}) {% endif%}
+{% if title == 'Pod System' %} url({%static 'img/header-img-podsys.png' %}) {% endif%}
+
+no-repeat">
     <div class="container">
         <div class="header__inner">
             <h1 class="header__heading">{{ title }}</h1>
@@ -79,24 +87,27 @@
                 <div class="container">
                     <div class="pagination__inner">
                         <button class="pag-button1" id="prev-button">
-													<a href="{{ products_urls }}{{ prev_page }}">
-														<div class="arrow-prev"></div>
-													</a>        
+                            <a href="{{ products_urls }}{{ prev_page }}">
+                                <div class="arrow-prev"></div>
+                            </a>
                         </button>
                         <ul id="pagination-list">
-                            <li class="link {% if products_page == 1 %}active{% endif %}" data-page="1"><a href="{{ products_urls }}1">1</a></li>
-                            <li class="link {% if products_page == 2 %}active{% endif %}" data-page="2"><a href="{{ products_urls }}2">2</a></li>
-                            <li class="link {% if products_page == 3 %}active{% endif %}" data-page="3"><a href="{{ products_urls }}3">3</a></li>
-<!--                            <li class="link {% if products_page == 4 %}active{% endif %}" data-page="4"><a href="{{ products_urls }}4">4</a></li>-->
-<!--                            <li class="link {% if products_page == 5 %}active{% endif %}" data-page="5"><a href="{{ products_urls }}5">5</a></li>-->
-<!--                            <li class="link {% if products_page == 6 %}active{% endif %}" data-page="6"><a href="{{ products_urls }}6">6</a></li>-->
-<!--                            <li class="link {% if products_page == 7 %}active{% endif %}" data-page="7"><a href="{{ products_urls }}7">7</a></li>-->
-<!--                            <li class="link {% if products_page == 8 %}active{% endif %}" data-page="8"><a href="{{ products_urls }}8">8</a></li>-->
+                            <li class="link {% if products_page == 1 %}active{% endif %}" data-page="1"><a
+                                    href="{{ products_urls }}1">1</a></li>
+                            <li class="link {% if products_page == 2 %}active{% endif %}" data-page="2"><a
+                                    href="{{ products_urls }}2">2</a></li>
+                            <li class="link {% if products_page == 3 %}active{% endif %}" data-page="3"><a
+                                    href="{{ products_urls }}3">3</a></li>
+                            <!--                            <li class="link {% if products_page == 4 %}active{% endif %}" data-page="4"><a href="{{ products_urls }}4">4</a></li>-->
+                            <!--                            <li class="link {% if products_page == 5 %}active{% endif %}" data-page="5"><a href="{{ products_urls }}5">5</a></li>-->
+                            <!--                            <li class="link {% if products_page == 6 %}active{% endif %}" data-page="6"><a href="{{ products_urls }}6">6</a></li>-->
+                            <!--                            <li class="link {% if products_page == 7 %}active{% endif %}" data-page="7"><a href="{{ products_urls }}7">7</a></li>-->
+                            <!--                            <li class="link {% if products_page == 8 %}active{% endif %}" data-page="8"><a href="{{ products_urls }}8">8</a></li>-->
                         </ul>
                         <button class="pag-button2" id="next-button">
-													<a href="{{ products_urls }}{{ next_page }}">
-														<div class="arrow-next"></div>
-													</a> 
+                            <a href="{{ products_urls }}{{ next_page }}">
+                                <div class="arrow-next"></div>
+                            </a>
                         </button>
                     </div>
                 </div>
@@ -126,7 +137,8 @@
                     <h1 class="number-paragraf">+48123456789</h1>
                 </div>
 
-                <p class="contacts__text">Have any questions? Give us a call any day from 8:55 AM to 9:05 AM (But better don't call us)</p>
+                <p class="contacts__text">Have any questions? Give us a call any day from 8:55 AM to 9:05 AM (But better
+                    don't call us)</p>
 
                 <div class="contacts__socials">
                     <a href="https://uk.wikipedia.org/wiki/Instagram"><img class="instagram"
