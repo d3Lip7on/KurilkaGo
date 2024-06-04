@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'KurilkaGo.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'tobacco_shop.db'
+        'NAME': BASE_DIR / 'tobacco_shop_database.db'
     }
 }
 

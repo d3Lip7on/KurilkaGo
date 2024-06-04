@@ -28,6 +28,7 @@ class DisposableVape(models.Model):
     nicotine_content = models.FloatField()
     image = models.BinaryField()
     price = models.FloatField()
+    title = models.TextField()
 
     class Meta:
         db_table = 'disposable_vape'  
@@ -81,6 +82,7 @@ class Liquid(models.Model):
     volume = models.TextField()
     price = models.FloatField()
     image = models.BinaryField()
+    description = models.TextField()
 
     class Meta:
         db_table = 'liquids'  
