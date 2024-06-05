@@ -56,12 +56,16 @@ def getDisposableVapes(request, page):
             product.image_base64 = base64.b64encode(product.image).decode('utf-8')
         else:
             product.image_base64 = ''
+    prev_page = 1 if page == 1 else page - 1
+    next_page = 3 if page == 3 else page + 1
     return render(request, 'products-page.html', {
         "title": 'E-Cig',
         'products_url': '/disposablevapes/',
         'products_page': page,
         'product_url': '/disposablevape/',
-        "products": disposable_vape_page
+        "products": disposable_vape_page,
+        'prev_page': prev_page,
+        'next_page': next_page,
     })
 
 
@@ -81,12 +85,16 @@ def getHookahs(request, page):
             product.image_base64 = base64.b64encode(product.image).decode('utf-8')
         else:
             product.image_base64 = ''
+    prev_page = 1 if page == 1 else page - 1
+    next_page = 3 if page == 3 else page + 1
     return render(request, 'products-page.html', {
         'title': 'Hookah',
         'products_url': '/hookahs/',
         'products_page': page,
         'product_url': '/hookah/',
         "products": hookahs_page,
+        'prev_page': prev_page,
+        'next_page': next_page,
     })
 
 
@@ -106,12 +114,16 @@ def getIqoses(request, page):
             product.image_base64 = base64.b64encode(product.image).decode('utf-8')
         else:
             product.image_base64 = ''
+    prev_page = 1 if page == 1 else page - 1
+    next_page = 3 if page == 3 else page + 1
     return render(request, 'products-page.html', {
         'title': 'Iqos',
         'products_url': '/iqoses/',
         'products_page': page,
         'product_url': '/iqos/',
         "products": iqos_page,
+        'prev_page': prev_page,
+        'next_page': next_page,
     })
 
 
@@ -131,12 +143,16 @@ def getLiquids(request, page):
             product.image_base64 = base64.b64encode(product.image).decode('utf-8')
         else:
             product.image_base64 = ''
+    prev_page = 1 if page == 1 else page - 1
+    next_page = 3 if page == 3 else page + 1
     return render(request, 'products-page.html', {
         'title': 'Liquid',
         'products_url': '/liquids/',
         'products_page': page,
         'product_url': '/liquid/',
         "products": liquid_page,
+        'prev_page': prev_page,
+        'next_page': next_page,
     })
 
 
@@ -156,12 +172,16 @@ def getVapes(request, page):
             product.image_base64 = base64.b64encode(product.image).decode('utf-8')
         else:
             product.image_base64 = ''
+    prev_page = 1 if page == 1 else page - 1
+    next_page = 3 if page == 3 else page + 1
     return render(request, 'products-page.html', {
         'title': 'Pod System',
         'products_url': '/vapes/',
         'products_page': page,
         'product_url': '/vape/',
         "products": this_vape,
+        'prev_page': prev_page,
+        'next_page': next_page,
     })
 
 
