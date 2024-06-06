@@ -11,11 +11,6 @@ page_size = 12
 def index(request):
     return render(request, 'homepage.html')
 
-
-def about(request):
-    return render(request, 'about.html')
-
-
 def getCigarettes(request, page):
     cigarettes_page = Cigarette.objects.all()[(page - 1) * page_size: page * page_size]
 
@@ -117,7 +112,7 @@ def getIqoses(request, page):
     prev_page = 1 if page == 1 else page - 1
     next_page = 3 if page == 3 else page + 1
     return render(request, 'products-page.html', {
-        'title': 'Iqos',
+        'title': 'Heating',
         'products_url': '/iqoses/',
         'products_page': page,
         'product_url': '/iqos/',

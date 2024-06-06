@@ -43,21 +43,48 @@
 <!-- header -->
 <header class="header" style="background:
 {% if title == 'Cigarettes' %} url({%static 'img/header-img-cig.png' %}) {% endif%}
-{% if title == 'E-Cig' %} url({%static 'img/header-img-esig.png' %}) {% endif%}
+{% if title == 'E-Cig' %} url({%static 'img/header-ecig.png' %}) {% endif%}
 {% if title == 'Hookah' %} url({%static 'img/header-img-hookah.png' %}) {% endif%}
-{% if title == 'Iqos' %} url({%static 'img/header-img-iqos.png' %}) {% endif%}
-{% if title == 'Liquid' %} url({%static 'img/header-img-cig.png' %}) {% endif%}
-{% if title == 'Pod System' %} url({%static 'img/header-img-podsys.png' %}) {% endif%}
+{% if title == 'Heating' %} url({%static 'img/header-iqos.png' %}) {% endif%}
+{% if title == 'Liquid' %} url({%static 'img/header-img-liquids.png' %}) {% endif%}
+{% if title == 'Pod System' %} url({%static 'img/pod.png' %}) {% endif%}
 
 no-repeat">
     <div class="container">
         <div class="header__inner">
             <h1 class="header__heading">{{ title }}</h1>
+            {% if title == 'Cigarettes' %}
             <p class="header__text">
                 Discover a wide array of top-quality cigarettes in our online store. From classic favorites to exclusive
                 blends, find the perfect smoke to suit your taste. Explore our diverse selection
                 and elevate your smoking experience today!
             </p>
+            {% endif%}
+            {% if title == 'E-Cig' %}
+            <p class="header__text">
+Explore our range of cutting-edge e-cigarettes for a modern vaping experience. Discover sleek designs, advanced technology, and a variety of flavors. Find the perfect e-cig to suit your style and enjoy a smoke-free alternative with ease.
+            </p>
+            {% endif%}
+            {% if title == 'Hookah' %}
+            <p class="header__text">
+Immerse yourself in the art of shisha with our selection of premium hookahs and accessories. Discover exquisite flavors and quality materials that enhance your smoking experience. Browse our diverse range of hookahs and accessories to elevate your relaxation moments.
+            </p>
+            {% endif%}
+            {% if title == 'Liquid' %}
+            <p class="header__text">
+                Discover a wide array of top-quality nicotine liquids in our online store. From classic flavors to exclusive blends, find the perfect vape to suit your taste. Explore our diverse selection and elevate your vaping experience today!
+            </p>
+            {% endif%}
+            {% if title == 'Pod System' %}
+            <p class="header__text">
+Discover the future of vaping with our selection of sleek and portable pod systems. Explore compact devices that deliver exceptional flavor and convenience. Find the perfect pod system for your vaping needs and enjoy a satisfying experience wherever you go.
+            </p>
+            {% endif%}
+            {% if title == 'Heating' %}
+            <p class="header__text">
+<!--Explore IQOS, the innovative heated tobacco system that offers a smoke-free alternative to traditional cigarettes. Discover a range of stylish devices and accessories designed to provide a seamless and satisfying tobacco experience. Upgrade your lifestyle with IQOS today.-->
+            </p>
+            {% endif%}
         </div>
     </div>
 </header>
