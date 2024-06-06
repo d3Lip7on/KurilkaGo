@@ -1,6 +1,7 @@
 .header {
 	background: url(/src/images/header-img-cig.png);
 	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .header__inner {
